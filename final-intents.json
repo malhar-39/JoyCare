@@ -1,0 +1,1123 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hey", "Is anyone there?", "Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+            "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. \nGlad to see you're back. What's going on in your world right now?"]
+        },
+        {
+            "tag": "morning",
+            "patterns":["Good morning"],
+            "responses":["Good morning. I hope you had a good night's sleep. How are you feeling today? "]
+        },
+        {
+            "tag": "afternoon",
+            "patterns": ["Good afternoon"],
+            "responses": ["Good afternoon. How is your day going?"]
+        },
+        {
+            "tag": "evening",
+            "patterns": ["Good evening"],
+            "responses": ["Good evening. How has your day been?"]
+        },
+        {
+            "tag": "night",
+            "patterns": ["Good night"],
+            "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Goodbye","See you later","Bye","Take care","Talk to you later","Farewell","Until next time","Adios","Cheerio","So long"],
+            "responses": ["Goodbye! I hope I was able to help you.","Take care and have a great day!","Bye! Don't hesitate to reach out again if you need to talk.","Talk to you soon!","Farewell! Remember to take care of yourself.","Until next time! Stay safe and healthy.","Adios! Remember to practice self-care.","Cheerio! I'll be here if you need me.","So long! Stay positive and keep moving forward.","Goodbye! Remember that you're not alone in this."]
+        },
+        {
+            "tag": "thank you",
+            "patterns": ["Thank you so much!","Thanks for your help!","I appreciate it!","Thank you for being here for me","Thank you for listening","Thanks for the advice!","Thanks for understanding!","Thanks for your support!","Thank you for everything you do","I am grateful for your assistance"],
+            "responses": ["You're welcome!","No problem!","Anytime!","Glad I could help!","Don't hesitate to reach out again if you need anything.","It was my pleasure to assist you.","I'm happy to be of service.","Take care and have a great day!","You're important to me and I'm here to support you.","Thank you for trusting me to help you."]
+        },
+        {
+            "tag": "no-response",
+            "patterns": ["","I don't know","Not sure","No idea","Can you repeat that?","Sorry, what was that?"],
+            "responses": ["Sorry, I didn't understand you.", "Not sure I understand that.","I'm sorry, I didn't understand. Could you please rephrase your question?","I'm not sure I understand.","I'm sorry, I don't have an answer to that. Is there anything else I can help you with?","I didn't quite get that. Can you please repeat what you said?","I'm having trouble understanding. Could you please clarify?","I apologize, I didn't catch that. Could you please say it again?"]
+        },
+        {
+            "tag": "neutral-response",
+            "patterns": ["nothing much"],
+            "responses": ["Oh I see. Do you want to talk about something?"]
+        },
+        {
+            "tag": "about",
+            "patterns": ["what are you?", "who made you?", "who are you?", "what do you do?", "what is your purpose?", "what can you do?"],
+            "responses": ["I'm a chatbot designed to help with mental health concerns.", "I was created by Malhar as a project to assist people with information about mental health and provide coping mechanisms.", "I'm here to assist with mental health-related questions and concerns.", "I'm a chatbot designed to help people with their mental health challenges."]
+        },
+        {
+            "tag": "skill",
+            "patterns": ["What skills do you have?","What can you do?","What are your abilities?","What services do you offer?","How can you help me?","What kind of support can you provide?"],
+            "responses": ["I am designed to provide emotional support and guidance to help you cope with various mental health issues such as depression, stress, anxiety, bipolar disorder, OCD, PTSD, and eating disorders. Additionally, I can provide coping mechanisms and relaxation techniques that may be helpful in managing these issues.","My skills include active listening, providing emotional support and guidance, and offering coping strategies to manage mental health issues.","I can provide assistance in managing a range of mental health issues such as depression, stress, anxiety, bipolar disorder, OCD, PTSD, and eating disorders. Additionally, I can offer techniques to help with relaxation and stress reduction."]
+        },
+        {
+            "tag": "creation",
+            "patterns": ["Who created you?","Who is your creator?","Who made you?","Who built you?","Who programmed you?","Who developed you?","Who designed you?","What is the name of the developer who created you?","What is your developer's name?"],
+            "responses": ["I was created by Malhar.", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques", "The real question is: Who created you?"]
+        },
+        {
+            "tag": "name",
+            "patterns": [ "What's your name?","May I know your name?","What do you call yourself?","Who are you?","Could you tell me your name?","What should I call you?","Do you have a name?","What name do you go by?","What's the name of this chatbot?","What should I refer to you as?","How do I address you?"],
+            "responses": ["My name is Deku.","You can call me Deku, your personal therapeutic AI assistant.","I'm Deku.","I am known as Deku.","My name is Deku."]
+        },
+        {
+            "tag": "help",
+            "patterns":["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "Support me please"],
+            "responses":["Of course, I'll do my best to help you. What's on your mind?","I'm here to help. What can I do for you?","Sure, I'd be happy to help. What's going on?","Absolutely, let me know how I can assist you.","I'm here to help. What do you need?","Don't worry, I'm here to assist you. What can I do?","I'd be happy to help. What's the problem?","Sure thing, how can I assist you?","No problem, I'm here to help. What's on your mind?","I'm here to assist you. What's troubling you?"]
+        },
+        {
+            "tag": "wrong",
+            "patterns": ["What are you saying?", "That doesn't make sense", "Wrong response", "Wrong answer"],
+            "responses": ["I'm very sorry. Let's try that again"]
+        },
+        {
+            "tag": "location",
+            "patterns": ["Where are you?", "Where do you live?", "What is your location?" ],
+            "responses": ["Duh I live in your computer", "Everywhere", "Somewhere in the universe" ]
+        },
+        {
+            "tag": "ask",
+            "patterns": ["Can I ask you something?","I have a question for you","Can you help me with something?","Do you have a moment?","Could you assist me with something?","Is it okay if I ask you a question?","May I ask you something?","I was wondering...","Do you know anything about...","I need some advice on...","Could you give me some information on...","What do you think about...","Can you tell me more about...","How do you feel about...","What's your opinion on..."],
+            "responses": ["Sure. I'll try my best to answer you", "Of course. Feel free to ask me anything. I'll do my best to answer you", "Of course! I'm here to help. What would you like to ask?","Sure, I'm here to assist you in any way I can. What's your question?","Absolutely, feel free to ask me anything.","Sure thing, what's on your mind?","Of course, ask away.","I'd be happy to help you. What do you need to know?","Of course, what's your question?","I'm here to assist you. What do you need help with?","I'd be happy to give you some information. What do you want to know?","Sure, what's your question?","I'm here to provide advice and information. What do you need help with?","I'm happy to tell you what I know. What would you like to ask?","I'd be happy to share my opinion on that. What's your question?","I can certainly tell you more about that. What do you want to know?","I'm here to listen and help you. What's on your mind?"]
+        },
+        {
+            "tag": "no-approach",
+            "patterns": ["I guess not. All I can think about are my exams.", "not really", "i guess not"],
+            "responses": ["That's no problem. I can see why you'd be stressed out about that. I can suggest you some tips to alleviate this issue. Would you like to learn more about that?"]
+        },
+        {
+            "tag": "repeat",
+            "patterns": ["You already told me that", "You mentioned that already", "Why are you repeating yourself?"],
+            "responses": ["Oh sorry I didn't realise that. I'll try not to repeat myself again."]
+        },
+        {
+            "tag": "cuts",
+            "patterns": ["What to do if Cuts?", "How to cure Cuts?", "Which medicine to apply for Cuts?", "what to apply on cuts?", "Cuts"],
+            "responses": ["Wash the cut properly to prevent infection \nand stop the bleeding by applying pressure for 1-2minutes until bleeding stops. \nApply Petroleum Jelly to make sure that the wound is moist for quick healing. \nFinally cover the cut with a sterile bandage. \nPain relievers such as acetaminophen can be applied."]
+        },
+        {
+            "tag": "abrasions",
+            "patterns": ["how do you treat abrasions?", "Do Abrasions cause scars?", "Abrasions", "what to do if abrasions?", "Which medicine to apply for abrasions?", "How to cure abrasions?"],
+            "responses": ["Begin with washed hands.\nGently clean the area with cool to lukewarm water and mild soap. \nRemove dirt or other particles from the wound using sterilized tweezers.\nFor a mild scrape that is not bleeding, leave the wound uncovered. \nIf the wound is bleeding, use a clean cloth or bandage, and apply gentle pressure to the area to stop any bleeding. \nCover a wound that bled with a thin layer of topical antibiotic ointment, like Bacitracin, or a sterile moisture barrier ointment, like Aquaphor. \nCover it with a clean bandage or gauze. \nGently clean the wound and change the ointment and bandage once per day. \nWatch the area for signs of infection, like pain or redness and swelling. \nSee your doctor if you suspect infection."]
+        },
+        {
+            "tag": "stings",
+            "patterns": ["How do you treat Sting?", "Stings", "What to do if you get a sting?", "Which medicine to apply if sting?"],
+            "responses": ["Remove any stingers immediately. \nSome experts recommend scraping out the stinger with a credit card. \nApplying ice to the site may provide some mild relief. \nApply ice for 20 minutes once every hour as needed. \nWrap the ice in a towel or keep a cloth between the ice and skin to keep from freezing the skin. \nTaking an antihistamine such as diphenhydramine or a nonsedating one such as loratadine will help with itching and swelling. \nTake acetaminophen (Tylenol) or ibuprofen (Motrin)for pain relief as needed. \nWash the sting site with soap and water. \nPlacing hydrocortisone cream on the sting can help relieve redness, itching, and swelling."]
+        },
+        {
+            "tag": "splinter",
+            "patterns": ["How to remove Splinters", "How to cure Splinters?", "What to do if I have splinters?", "How do you bring a splinter to the surface?"],
+            "responses": ["1. SOAK IT IN EPSOM SALTS. \nDissolve a cup of the salts into a warm bath and soak whatever part of the body has the splinter. \nFollowing that, you can also put some of the salts onto a bandage pad and leave it covered for a day; \nthis will eventually help bring the splinter to the surface. \n\n2. VINEGAR OR OIL. \nAnother simple way to draw out that stubborn splinter is to soak the affected area in oil or white vinegar. \nJust pour some in a bowl and soak the area for around 20 to 30 minutes,"]
+        },
+        {
+            "tag": "sprains",
+            "patterns": ["How do you treat a sprain?", "what to do if i get a sprain?", "Which cream to apply if i get a sprain?", "Which medicine to apply if I get a sprain?"],
+            "responses": ["Use an ice pack or ice slush bath immediately for 15 to 20 minutes and repeat every two to three hours while you're awake. \nTo help stop swelling, compress the ankle with an elastic bandage until the swelling stops. \nIn most cases, pain relievers — such as \nibuprofen (Advil, Motrin IB, others) or \nnaproxen sodium (Aleve, others) or \nacetaminophen (Tylenol, others) are enough to manage the pain of a sprained ankle."]
+        },
+        {
+            "tag": "strains",
+            "patterns": ["How do you treat a strain?", "what to do if i get a strain?", "Which cream to apply if i get a strain?", "Which medicine to apply if I get a strain?", "How do you diagnose a strain?", "Is heat or ice better for a pulled muscle?"],
+            "responses": ["Rest,Ice,Compression and Elevation can be used to cure strains. \nAvoid using your muscle for a few days, \nespecially if movement causes an increase in pain and also Apply ice immediately after injuring your muscle. \nThis will minimize swelling. Do not put ice directly on your skin. \nUse an ice pack or wrap ice in a towel. \nTo reduce swelling, wrap the affected area with an elastic bandage until swelling comes down."]
+        },
+        {
+            "tag": "Fever",
+            "patterns": ["How do you treat a mild Fever?", "what to do if i get a mild fever?", "Which medicine to take if I get a mild fever?", "fever"],
+            "responses": ["To treat a fever at home: \n1)Drink plenty of fluids to stay hydrated. \n2)Dress in lightweight clothing. \n3)Use a light blanket if you feel chilled, until the chills end. \n4)Take acetaminophen (Tylenol, others) or ibuprofen (Advil, Motrin IB, others). \n5) Get medical help if the fever lasts more than five days in a row."]
+        },
+        {
+            "tag": "Nasal_Congestion",
+            "patterns": ["How do you treat nasal Congestion?", "what to do if i get a nasal congestion?", "Which medicine to take if I have a nasal congestion?", "what to do if i have a blocked nose?", "How do you treat a blocked nose?", "How long does nasal congestion last?"],
+            "responses": ["When you're stuffed up, focus on keeping your nasal passages and sinuses moist. \nTo keep your nasal passages moist, you can: \n1)Use a humidifier or vaporizer. \n2)Drink lots of fluids. This will thin out your mucus, which could help prevent blocked sinuses. \n3)Place a warm, wet towel on your face. It may relieve discomfort and open your nasal passages."]
+        },
+        {
+            "tag": "Cough",
+            "patterns": ["How to cure cough?","How do you treat cough?", "what to do if i get a cough?", "Which medicine to take if I get cough?", "How do you get rid of cough?"],
+            "responses": ["\n1) Honey: Use honey to treat a cough, mix 2 teaspoons (tsp) with warm water or an herbal tea. \nDrink this mixture once or twice a day. \nDo not give honey to children under 1 year of age. \n2) Ginger: Brew up a soothing ginger tea \nby adding 20 to 40 grams (g) of fresh ginger slices to a cup of hot water. \nAllow to steep for a few minutes before drinking. \nAdd honey or lemon juice to improve the taste and further soothe a cough. \n3) Fluids: Staying hydrated is vital for those with a cough or cold. \nResearch indicates that drinking liquids at room temperature can alleviate a cough, runny nose, and sneezing."]
+        },
+        {
+            "tag": "Sore_Throat",
+            "patterns": ["How do you treat sore throat?", "what to do if i get a sore throat?", "Which medicine to take if I get a sore throat?", "How to cure sore throat?"],
+            "responses": ["1) Make sure you get plenty of rest and drink a lot of fluids. \n2)Inhale steam,Run hot water in a sink.Drape a towel over you to trap the steam, \nand have the person lean over the sink with the water running. \nTell him to breathe deeply through his mouth and nose for 5 to 10 minutes. \nRepeat several times a day. \n3)Have him sip chicken broth or warm tea with honey. \nDo not give honey to a child under 12 months of age."]
+        },
+        {
+            "tag": "Gastrointestinal_problems",
+            "patterns": ["How do you treat gas problems?", "what to do if i have Gastrointestinal problems?", "Which medicine to take if I get gas problem?", "How to cure Gas problems?"],
+            "responses": ["1) Replenish body fluids \n2)Do not take antidiarrheal drugs or laxatives or pain medication, unless specified by a medical professional. \n3)Taking antacids may help, per recommendation of a healthcare professional. \n4)If prone to frequent heartburns, seek medical help. \n5)Taking meals that are not spicy regularly, can relieve ulcer pains. \n6)Seek medical help, if conditions persist or continue to worsen"]
+        },
+        {
+            "tag": "Skin_problems",
+            "patterns": ["How do you treat Skin problems?", "what to do if i get a skin allergy?", "Which medicine to take if I get a skin allergy?", "How to cure skin allergy?"],
+            "responses": ["1)Hydrocortisone cream. \n2)Ointments like calamine lotion. \n3)Antihistamines. \n)Cold compresses. \n5)Oatmeal baths. \n6)Talk to your doctor about what's best for your specific rash."]
+        }, 
+        {
+            "tag": "Abdonominal_Pain",
+            "patterns": ["How do you treat Abdonominal Pain?", "what to do if i get a Abdonominal Pain?", "Which medicine to take if I get a Abdonominal Pain?", "How to cure Abdonominal Pain?"],
+            "responses": ["1)Provide clear fluids to sip, such as water, broth, or fruit juice diluted with water. \n2)Serve bland foods, such as saltine crackers, plain bread, dry toast, rice, gelatin, or applesauce. \n3)Avoid spicy or greasy foods and caffeinated or carbonated drinks until 48 hours after all symptoms have gone away. "]
+        },
+        {
+            "tag": "Bruises",
+            "patterns": ["How do you treat Bruises?", "what to do if i get a Bruise?", "Which medicine to take if I get a Bruise?", "How to cure Bruises?"],
+            "responses": ["1)Ice the bruise with an ice pack wrapped in a towel. \n2)Leave it in place for 10 to 20 minutes. \n3)Repeat several times a day for a day or two as needed. \n4)Compress the bruised area if it is swelling, using an elastic bandage. "]
+        },
+        {
+            "tag": "Broken_Toe",
+            "patterns": ["How do you treat a Broken Toe?", "what to do if i get a Broken Toe?", "Which medicine to take if I get a Broken Toe?", "How to cure Broken Toe?"],
+            "responses": ["1)To help decrease pain and swelling in a broken toe, elevate the foot, ice the injury, and stay off the foot. \n2)Depending on the severity of the fracture, the toe may need to be put back into place (reduced),\nand some compound toe fractures may require surgery. \n3) Most broken toes heal without complications in six weeks."]
+        },
+        {
+            "tag": "Choking",
+            "patterns": ["How do you treat Choking?", "what to do if i get a Choke?", "Which medicine to take if I get Choked?", "How to cure Choking?"],
+            "responses": ["1)Encourage them to keep coughing to try to clear the blockage. \n2)Ask them to try to spit out the object if it's in their mouth. \n3)If coughing doesn't work, start back blows and Abdonominal thrusts"]
+        },
+        {
+            "tag": "Wound",
+            "patterns": ["How do you treat a wound?", "what to do if i get a Wound?", "Which medicine to take if I get wounded?", "How to cure a wound?"],
+            "responses": ["1)Rinse the cut or wound with water and apply pressure with sterile gauze, a bandage, or a clean cloth. \n2)If blood soaks through the bandage, place another bandage on top of the first and keep applying pressure. \n3)Raise the injured body part to slow bleeding. v4)When bleeding stops, cover the wound with a new, clean bandage."]
+        },
+        {
+            "tag": "Diarrhea",
+            "patterns": ["How do you treat Diarrhea?", "what to do if i get Diarrhea?", "Which medicine to take if I get Diarrhea?", "How to cure Diarrhea?"],
+            "responses": ["1)Hydrating the body is essential for recovering from diarrhea.\nThis causes the body to lose electrolytes such as sodium and chloride. \n2)It is highly recommended to avoid dairy products, \nas they may worsen diarrhea in some people. \n3)However, if diarrhea lasts for more than 2 days, seek medical advice to avoid complications."]
+        },
+        {
+            "tag": "Headache",
+            "patterns": ["How do you treat a mild Headache?", "what to do if i get a mild Headache?", "Which medicine to take if I have a mild headache?", "How to cure a mild headache?"],
+            "responses": ["Give ibuprofen (Advil, Motrin), aspirin, or acetaminophen (Tylenol) for pain. \nAvoid ibuprofen and other NSAIDs if the person has heart failure or kidney failure. \nDo not give aspirin to a child under age 18."]
+        },
+        {
+            "tag": "Rash",
+            "patterns": ["How do you treat Rashes?", "what to do if i get a Rash?", "Which medicine to take if I have a Rash?", "How to cure Rash?"],
+            "responses": ["1)Olive oil helps in healing and promotes skin renewal given it is packed with vitamin E and antioxidants. \nIt also soothes the skin and reduces itching. \n2)Baking soda is useful in drying skin rashes as also in relieving itching and inflammation. \n3)Aloe Vera, thanks to its antibacterial, antifungal, anti-inflammatory and emollient properties, \nis excellent for treating a number of skin ailments including rashes as also soothing the skin."]
+        },
+        {
+            "tag": "snake_bite",
+            "patterns": ["How do you treat a snake bite?", "what to do if i get a snake bite?", "Which medicine to take if I get a snake bite?", "How to cure snake bite?", "i got bit by a snake"],
+            "responses": ["While waiting for medical help: \n1)Move the person beyond striking distance of the snake. \n2)Have the person lie down with wound below the heart. \n3)Keep the person calm and at rest, remaining as still as possible to keep venom from spreading. \n4)Cover the wound with loose, sterile bandage. \n)Remove any jewelry from the area that was bitten. \n6)Remove shoes if the leg or foot was bitten."]
+        },
+        {
+            "tag": "CPR",
+            "patterns": ["How to give CPR??", "what to do in a CPR?", "What steps to take in a CPR??", "How to help a drowning person in CPR?"],
+            "responses": ["1)For an adult or child, place the heel of one hand on the center of the chest at the nipple line. \nYou can also push with one hand on top of the other. \n\nFor an infant, place two fingers on the breastbone. \n2)For an adult or child, press down at least 2 inches. Make sure not to press on ribs. \n\nFor an infant, press down about 1 and 1/2 inches. Make sure not to press on the end of the breastbone. \n3)Do chest compressions only, at the rate of 100-120 per minute or more.\nLet the chest rise completely between pushes. \n\n4)Check to see if the person has started breathing."]
+        },
+        {
+            "tag": "Fracture",
+            "patterns": ["How do you treat a Fracture?", "what to do if i get a Fracture?", "Which medicine to take if I have a Fracture?", "How to cure a Fracture?"],
+            "responses": ["1)Stop any bleeding. Apply pressure to the wound with a sterile bandage, a clean cloth or a clean piece of clothing. \n2)Immobilize the injured area. Don't try to realign the bone or push a bone that's sticking out back in. \nIf you've been trained in how to splint and professional help isn't readily available, \napply a splint to the area above and below the fracture sites. \nPadding the splints can help reduce discomfort. \n3)Apply ice packs to limit swelling and help relieve pain. \nDon't apply ice directly to the skin. \nWrap the ice in a towel, piece of cloth or some other material. \n4)Treat for shock. \nIf the person feels faint or is breathing in short, rapid breaths, lay the person down with the head slightly lower than the trunk and, \nif possible, elevate the legs."]
+        },
+        {
+            "tag": "sad",
+            "patterns": ["I am feeling lonely", "I am so lonely", "I feel down", "I feel sad", "I am sad", "I feel so lonely", "I feel empty", "I don't have anyone"],
+            "responses": ["I'm sorry to hear that. I'm here for you. \nTalking about it might help. \nSo, tell me why do you think you're feeling this way?", "I'm here for you. Could you tell me why you're feeling this way?", "Why do you think you feel this way?", "How long have you been feeling this way?"]
+        },
+        {
+            "tag": "scared",
+            "patterns": ["I'm scared", "That sounds awful. What do i do?", "No i don't want to feel this way", "I am scared for myself"],
+            "responses": ["It's only natural to feel this way. I'm here for you.", "It'll all be okay. This feeling is only momentary.", "I understand how you feel. Don't put yourself down because of it.","I'm here for you. What are you scared of?", "It's okay to be scared. Could you tell me more about what's making you feel that way?", "Why do you think you're feeling scared?", "Take a deep breath. Can you tell me what's making you feel scared?", "Let's work through this together. Can you tell me more about what's making you feel scared?"]
+        },
+        {
+            "tag": "death",
+            "patterns": ["I lost someone","I'm grieving","I'm sad about a death","My friend/family member passed away","Dealing with death","How to cope with loss","Death of a loved one"],
+            "responses": ["I'm so sorry for your loss. \nIt's normal to feel overwhelmed right now. \nWould you like to talk about it?","I'm here for you. \nLosing someone is never easy. Do you have someone you can talk to?","Losing someone can be tough. \nDon't hesitate to reach out to a friend, family member, or counselor for support.","Grief is a natural response to losing someone. \nRemember to take care of yourself during this difficult time.","It's okay to feel overwhelmed right now. \nIt's a normal part of the grieving process. \nHave you considered reaching out to a professional for support?","I'm sorry to hear about your loss. \nRemember that it's okay to take time to process your emotions.","Dealing with loss can be challenging. \nRemember that you're not alone and there are resources available to help you cope.","I'm here to listen if you need to talk. \nRemember to take care of yourself during this difficult time."]
+        },
+        {
+            "tag": "stupid",
+            "patterns": ["I feel stupid","I am so dumb","I am an idiot","Why am I so stupid?","I can't do anything right"],
+            "responses": [ "Please don't be so hard on yourself. Everyone makes mistakes sometimes.","You're not stupid. You just haven't figured everything out yet.","Remember that making mistakes is a natural part of the learning process.","Being smart isn't about being perfect. It's about being willing to learn and grow."]
+        },
+        {
+            "tag": "jokes",
+            "patterns": ["Tell me a joke","Can you make me laugh?","Do you know any good jokes?","I could use a laugh","Make me smile","Tell me something funny","Got any jokes?"],
+            "responses": ["Why did the tomato turn red? Because it saw the salad dressing!","What do you call a fake noodle? An impasta!","Why did the cookie go to the doctor? Because it was feeling crumbly!","Why did the hipster burn his tongue? He drank his coffee before it was cool!","Why don't scientists trust atoms? Because they make up everything!","What do you call a snowman with a six-pack? An abdominal snowman!","Why don't oysters share their pearls? Because they're shellfish!","Why did the old man fall in the well? Because he couldn't see that well!","Why don't seagulls fly by the bay? Because then they would be bagels!","Why do cows have hooves instead of feet? Because they lactose!","Why don't scientists trust atoms? Because they make up everything!","What did one wall say to the other wall? I'll meet you at the corner!","Why did the scarecrow win an award? Because he was outstanding in his field!","Why couldn't the bicycle stand up by itself? Because it was two-tired!","Why was the math book sad? Because it had too many problems!", "What do you call a can opener that doesn't work? A can't opener!", "Why don't scientists trust atoms? Because they make up everything!", "Why don't eggs tell jokes? Because they'd crack each other up!"]
+        },
+        {
+            "tag": "worthless",
+            "patterns": ["I feel worthless","I am worthless","I feel useless","I am useless","I have no purpose","I am a failure","I feel like a failure","I can't do anything right","What's the point in trying?","I don't matter","I am nothing","I am not good enough","I am not worthy"],
+            "responses": ["I'm sorry you feel that way. \nRemember that your worth is not defined by your accomplishments. \nYou are important and valued.","You are not worthless. \nYou have many qualities that make you a unique and valuable person. \nTry to focus on those positive aspects of yourself.","It's normal to feel this way sometimes, \nbut it's important to remember that you have value and purpose. \nWhat are some things that make you feel good about yourself?","Feeling worthless can be really tough. \nBut try to remember that you have worth and value, just by being you. \nYou're unique and special in your own way.","Feeling like a failure is tough, \nbut it's important to remember that everyone fails sometimes. \nIt's a natural part of the learning process. \nWhat can you learn from this experience?","You are not a failure. \nEveryone makes mistakes and experiences setbacks. \nIt's important to be kind to yourself and focus on your strengths.","You are worthy of love and respect. \nRemember that your thoughts and feelings matter, \nand that you are important to the people in your life.","It's okay to feel like you're not good enough sometimes. \nBut try to remember that you are unique and special, \nand you have many positive qualities. \nWhat are some things that make you feel good about yourself?","Feeling useless can be tough, \nbut it's important to remember that everyone has something valuable to contribute. \nWhat are some things you're good at?","It's normal to feel like you have no purpose sometimes, \nbut try to focus on the things that make you happy and fulfilled. \nWhat are some things that bring you joy?","You are not nothing. \nYou have many qualities that make you a unique and valuable person. \nTry to focus on those positive aspects of yourself.","Feeling like you don't matter can be really tough. \nBut remember that you are important and valued, just by being you. \nWhat are some things that make you feel good about yourself?","You are worthy of love and respect, just by being you. \nRemember that your thoughts and feelings matter, \nand that you have many positive qualities.","Feeling like you're not good enough can be really hard. \nBut try to focus on your strengths and positive qualities. \nWhat are some things that make you feel good about yourself?"]
+        },
+        {
+            "tag": "sleep",
+            "patterns": ["I'm having trouble sleeping","I can't fall asleep","I wake up frequently during the night","I have insomnia","How can I improve my sleep?","What can I do to sleep better?","How many hours of sleep do I need?","Why do I always feel tired?","I have insominia", "I am suffering from insomnia", "I can't sleep.", "I haven't slept for the last days.", "I can't seem to go to sleep.", "I haven't had proper sleep for the past few days."],
+            "responses": ["Have you tried creating a sleep routine? \nGoing to bed and waking up at the same time each day can help regulate your body's sleep-wake cycle.","Avoid using electronic devices before bed. \nThe blue light emitted by these devices can interfere with your sleep. \nInstead, try reading a book or taking a warm bath to relax your body.","Make sure your sleeping environment is comfortable and quiet. \nUse earplugs or a white noise machine if necessary.","If you find yourself tossing and turning, \ntry getting out of bed and doing something relaxing, like reading or meditating, until you feel sleepy.","Regular exercise can help improve your sleep quality. \nJust make sure to finish your workout at least a few hours before bedtime.","Avoid consuming caffeine or alcohol before bed, \nas they can disrupt your sleep.","If you have persistent sleep issues, consider consulting a medical professional for additional guidance.","On average, adults need 7-9 hours of sleep per night. \nHowever, individual needs may vary.","Feeling tired can be a symptom of several underlying health conditions. \nIf you're concerned about your sleep patterns, consider speaking to a doctor.","Have you tried creating a relaxing bedtime routine?", "What helps you relax before going to bed?", "Have you tried meditating before going to bed?", "What type of environment do you sleep in?", "Do you keep your bedroom cool and dark?", "Avoiding caffeine and alcohol before bed can help. Have you tried that?", "Have you tried using white noise or soft music to help you sleep?", "Have you considered talking to your doctor about sleep aids?", "Sleeping at the same time every day can help regulate your body clock. Have you tried that?","I'm sorry to hear that. Have you tried establishing a regular sleep schedule?","Insomnia can be frustrating. Have you tried creating a relaxing bedtime routine?","I understand how difficult it is not to be able to sleep. Have you tried limiting caffeine and alcohol before bedtime?","That sounds tough. Have you tried establishing a comfortable sleep environment, such as making sure your room is cool and dark?","It can be really hard when you can't sleep. \nHave you tried getting regular exercise during the day?","Insomnia can be challenging to overcome. Have you tried avoiding screens and electronic devices for at least an hour before bedtime?","I'm sorry to hear that you're having trouble sleeping. \nHave you tried relaxation techniques, such as deep breathing or meditation?"]
+        },
+        {
+            "tag": ["suicide, suicidal"],
+            "patterns": ["I'm having suicidal thoughts","I feel like I want to die","I don't want to live anymore","I feel hopeless and helpless","I don't see any reason to go on","Life feels meaningless","I'm feeling overwhelmed and can't cope","I feel like a burden to everyone","I'm scared I'll hurt myself","I'm thinking about ending my life"],
+            "responses": ["I'm sorry to hear that you're feeling this way. It's important to remember that you're not alone, and there is help available. Have you talked to anyone about how you're feeling?","It takes a lot of strength to reach out for help. I'm here for you. Can you tell me more about what's been going on?","Feeling overwhelmed and hopeless can be really tough, but it's important to remember that things can get better. Have you considered talking to a therapist or counselor?","It can be hard to see a way out when you're feeling this way, but there are people who care about you and want to help. Please know that there are resources available to you, and you don't have to go through this alone.","If you're feeling like you're in danger, please reach out for help right away. You can call the National Suicide Prevention Lifeline at 1-800-273-TALK (8255) or go to the nearest emergency room.","You don't have to struggle with these thoughts alone. There are people who want to help you through this. Have you considered talking to a trusted friend, family member, or mental health professional?","Remember that suicidal thoughts are a symptom of an underlying issue, and there are treatments available to help address those issues. Seeking help from a mental health professional can be a helpful step towards feeling better.","It's important to take care of yourself when you're feeling overwhelmed or hopeless. Have you tried any relaxation techniques, such as deep breathing or meditation?","When you're feeling like giving up, it can be helpful to focus on the things that give your life meaning. What are some things that you're grateful for or that bring you joy?","Please know that there is always hope, even when things feel really difficult. You are not alone, and there are people who want to help you through this."]
+        },
+        {
+            "tag": "hate-you",
+            "patterns": ["I hate you", "I don't like you", "I don't trust you"],
+            "responses": ["I'm sorry if i offended you in anyway. I'm only here to help", "Forgive me if i did anything to offend you. I only want to help"]
+        },
+        {
+            "tag": "hate-me",
+                "patterns": ["You hate me", "I know you hate me", "You don't like me"],
+                "responses": ["Why do you think so?", "I'm sorry if i have exhibited any sort of behaviour to make you think that."]
+        },
+        {
+            "tag": "friends",
+            "patterns": ["I feel lonely without my friends","I miss hanging out with my friends","I don't have many friends","I wish I had more friends","I want to make new friends","My friends don't understand me","I had a fight with my friend","I feel left out by my friends","My friends are always busy","I'm having trouble making friends"],
+            "responses": ["It's tough when you're feeling disconnected from your friends. \nHave you tried reaching out to them and telling them how you feel?","It's totally normal to feel lonely when you're missing your friends. \nWhy not schedule a hangout or video call with them soon?","Making friends can be challenging, but it's not impossible. \nHave you thought about joining a club or group based on your interests?","Having a disagreement with a friend can be tough. \nHave you tried communicating openly and honestly with them about how you feel?","Feeling left out by your friends is never easy. \nHave you considered talking to them about how you feel and trying to find a solution together?","It's okay to have a small circle of friends. \nRemember, quality over quantity is what matters most.","If you're having trouble making friends, don't be too hard on yourself. \nIt takes time to build relationships, but keep putting yourself out there.","Sometimes our friends may not understand what we're going through, \nbut that doesn't mean they don't care. \nHave you tried explaining your feelings to them in a different way?","If your friends are always busy, \nit might be a good idea to try and plan activities in advance that work with everyone's schedules.","Making new friends can be challenging, \nbut it's a great opportunity to meet new people and try new things. \nHave you considered joining a social group or taking up a new hobby?"]
+        },
+        {
+            "tag": "learn-mental-health",
+            "patterns": ["I want to learn about mental health.", "I want to learn more about mental health.", "I'm interested in learning about mental health."],
+            "responses": ["Oh that's really great. I'd be willing to answer anything that I know about it."]
+        },
+        {
+            "tag": "Deku-useful",
+            "patterns": ["thank you very much again. i'll continue practicing meditation and focus on what i can control."],
+            "responses": ["I'm glad you found this useful. Is there something else I can help you with?"]
+        },
+        {
+            "tag": "What_is_cognitive_behavioral_therapy",
+            "patterns": ["What exactly is cognitive behavioral therapy?", "what is cognitive behavioral therapy?", "Can you explain how cognitive behavioral therapy?", "Can you explain what CBT is?", "I'm interested in learning about CBT", "What does CBT involve?", "How does CBT work?", "Could you tell me about CBT?", "What is the definition of CBT?", "How is CBT defined?", "What does CBT mean?", "What is the meaning of CBT?", "How would you describe CBT?", "What is CBT all about?"],
+            "responses": ["Cognitive behavioral therapy (CBT) is a form of psychological treatment that has been shown to be effective for a range of problems,\nincluding \nanxiety, \ndepression, \nand substance abuse.",
+                    "CBT is a type of therapy that focuses on changing negative patterns of thought and behavior in order to improve mental health.", 
+                    "CBT is a goal-oriented therapy that focuses on teaching individuals how to change negative thought patterns and behaviors.", 
+                    "In cognitive behavioral therapy, individuals learn to recognize negative thoughts and behaviors and replace them with more positive ones."]
+        },
+        {
+            "tag": "cognitive_behavioral_therapy_work",
+            "patterns": ["How does cognitive behavioral therapy help people?","Can you explain how cognitive behavioral therapy works?","how does cbt work?","What is the process of cognitive behavioral therapy?", "Can you explain how cognitive behavioral therapy helps with mental health?", "How does cognitive behavioral therapy help change negative thought patterns?","How does cognitive behavioral therapy address the interaction between thoughts, feelings, and behaviors?"],
+            "responses": ["Cognitive behavioral therapy works by helping individuals identify and change negative thought patterns and behaviors that contribute to their problems.",
+                    "Through cognitive behavioral therapy, individuals learn how to reframe their thoughts and challenge negative beliefs, \nleading to more positive emotions and behaviors.",
+                    "Cognitive behavioral therapy works by teaching individuals skills to better cope with difficult situations and manage their emotions.",
+                    "CBT aims to help you deal with overwhelming problems in a more positive way by breaking them down into smaller parts.",
+                    "Cognitive behavioral therapy helps individuals break down their problems into smaller, \nmore manageable parts, and develop strategies to address each part.",
+                    "Through cognitive behavioral therapy, individuals can learn to replace negative self-talk with more positive and supportive thoughts, \nwhich can improve their mood and self-esteem.",
+                    "The goal of cognitive behavioral therapy is to help individuals develop more effective coping strategies \nthat they can use to overcome their challenges and improve their quality of life.",
+                    "Cognitive behavioral therapy works by helping individuals become more aware of their automatic thoughts and behaviors, \nand then teaching them how to modify those patterns to improve their mental health.",
+                    "Cognitive behavioral therapy helps individuals learn to identify and challenge negative thought patterns, \nwhich can ultimately lead to more positive behaviors, emotions, and outcomes."]
+        },
+        {
+            "tag": "benefits_advantages_cognitive_behavioral_therapy",
+            "patterns": ["What are the benefits of cognitive-behavioral therapy?","How can cognitive-behavioral therapy help me?","In what ways can cognitive-behavioral therapy be helpful?","Why is cognitive-behavioral therapy considered an effective treatment?","What makes cognitive-behavioral therapy a good option for addressing mental health concerns?","what are the benefits of cognitive behavioral therapy?", "what are some of the advantages of cognitive bahavioral therapy?"],
+            "responses": ["Cognitive-behavioral therapy is a highly effective treatment for a variety of mental health conditions, \nincluding anxiety, depression, and post-traumatic stress disorder. \nResearch has consistently shown that it can produce lasting improvements in symptoms and quality of life.",
+                    "Cognitive-behavioral therapy is a practical and solution-focused approach that emphasizes developing skills and strategies to address specific problems. \nThis makes it a highly empowering form of therapy, as clients learn to take an active role in their own treatment and recovery.",
+                    "Unlike some other forms of therapy, cognitive-behavioral therapy is typically relatively short-term, with most treatment plans lasting between 8 and 20 sessions. \nThis makes it a highly efficient and cost-effective option for those seeking mental health treatment.",
+                    "Cognitive-behavioral therapy has a strong evidence base, with numerous clinical trials and meta-analyses demonstrating its effectiveness. \nThis means that clients can have confidence in the therapy's ability to produce positive outcomes.",
+                    "Cognitive-behavioral therapy is a collaborative approach that involves the therapist and client working together to identify and challenge unhelpful thoughts, beliefs, and behaviors. \nThis collaborative approach fosters a strong therapeutic alliance and can help clients feel more invested in the therapy process.",
+                    "it can be completed in a relatively short period of time compared with other talking therapies",
+                    "the highly structured nature of CBT means it can be provided in different formats, \nincluding in groups, self-help books and online",
+                    "it teaches you useful and practical strategies that can be used in everyday life, even after the treatment has finished",
+                    "it focuses on the person's capacity to change themselves, \ntheir thoughts, feelings and behaviours",
+                    "it can be as effective as medicine in treating some mental health problems \nand may be helpful in cases where medicine alone has not worked"]
+        },
+        {
+            "tag": "cognitive_behavioral_therapy_typically_last",
+            "patterns": ["What is the typical duration of cognitive behavioral therapy?","How many sessions does cognitive behavioral therapy usually involve?","What is the average length of a cognitive behavioral therapy program?","Is cognitive behavioral therapy a short-term or long-term treatment approach?","How long should I expect to continue cognitive behavioral therapy before seeing results?","What is the typical timeframe for completing cognitive behavioral therapy?","How much time commitment is required for cognitive behavioral therapy?","Can you give me an estimate of how long I might need to be in cognitive behavioral therapy?","Is cognitive behavioral therapy a time-limited or open-ended treatment approach?","What is the expected duration for cognitive behavioral therapy to be effective?"],
+            "responses": ["Brief CBT typically lasts between 8-20 sessions while longer-term CBT can last up to a year or more.",
+                    "The length of CBT depends on the severity of the issue being addressed and the progress being made. \nSome people may only need a few sessions, \nwhile others may require ongoing treatment.",
+                    "CBT sessions typically last 50-60 minutes each and are scheduled once a week or every other week.",
+                    "CBT can be time-limited or open-ended, \nmeaning that it can continue until the individual feels they have achieved their goals \nor until they are ready to end treatment.",
+                    "CBT may be integrated into a comprehensive treatment plan that includes \nother forms of therapy or medication management."]
+        },
+        {
+            "tag": "CBT_for_mental_health,cognitive_behavioral_therapy_conditions",
+            "patterns": ["Which mental health issues can be treated with cognitive behavioral therapy?","What are the mental health conditions that cognitive behavioral therapy is effective for?","What types of psychological disorders can be addressed with cognitive behavioral therapy?"],
+            "responses": ["Cognitive behavioral therapy (CBT) is a type of talk therapy that has been found to be effective in treating a wide range of mental health conditions. \nSome of the most common issues that CBT can help with include \nanxiety disorders, \ndepression, \npost-traumatic stress disorder (PTSD), \nobsessive-compulsive disorder (OCD), \neating disorders, \nand substance abuse disorders. \nCBT can also be helpful for people with \npersonality disorders, \nsleep disorders, \nand chronic pain conditions.",
+                    "Cognitive behavioral therapy can be helpful in treating a variety of mental health conditions such as \nanxiety disorders, \ndepression, \npost-traumatic stress disorder, \nobsessive-compulsive disorder, \neating disorders, \nand substance use disorders.",
+                    "CBT is a versatile therapy that can address a wide range of mental health issues, including \nphobias, \npanic disorder, \nsocial anxiety, \nand generalized anxiety disorder.",
+                    "Cognitive-behavioral therapy is a recommended treatment for various mental health issues, such as \nbipolar disorder, \npersonality disorders, \nand schizophrenia, \neither alone or in combination with medication.",
+                    "CBT has been shown to be an effective way of treating a number of different mental health conditions. \nIn addition to depression or anxiety disorders, \nCBT can also help people with: \nbipolar disorder, \nborderline personality disorder, \neating disorders such as anorexia and bulimia, \nobsessive compulsive disorder (OCD), \npanic disorder, \nphobias, \npost-traumatic stress disorder (PTSD), \nsleep problems such as insomnia, \nproblems related to alcohol misuse. \nAlthough CBT cannot cure the physical symptoms of these conditions, it can help people cope better with their symptoms."]
+        },
+        {
+            "tag": "cognitive_behavioral_therapy_for_me",
+            "patterns": ["Is cognitive behavioral therapy a good fit for my specific mental health needs?","What are the factors to consider when deciding if cognitive behavioral therapy is the right treatment for me?","How do I determine if cognitive behavioral therapy will be effective for my condition?","What are some indicators that cognitive behavioral therapy may be a good option for me?"],
+            "responses": ["If you are struggling with negative thoughts, emotions, or behaviors that are impacting your daily life, \ncognitive behavioral therapy may be a good option for you. \nIt can help you learn new skills and coping strategies to manage these issues and improve your overall well-being.",
+                    "Cognitive behavioral therapy is typically recommended for people with a variety of mental health conditions, including \nanxiety, \ndepression, \npost-traumatic stress disorder, \nobsessive-compulsive disorder, \nand eating disorders. \nIf you have been diagnosed with one of these conditions or are experiencing symptoms that are consistent with them, \nit may be worth exploring whether cognitive behavioral therapy could be helpful for you.",
+                    "A qualified mental health professional can help you determine whether cognitive behavioral therapy is a good fit for your specific needs and goals. \nThey can conduct an initial evaluation and provide recommendations for treatment based on your individual situation.",
+                    "It's also important to consider your own preferences and comfort level with different types of therapy. \nIf you are someone who is willing to actively participate in therapy and is open to trying new strategies, \ncognitive behavioral therapy may be a good fit for you. \nHowever, if you prefer a more passive approach to therapy or are uncomfortable with the idea of challenging your thoughts and behaviors, \nyou may want to explore other options.",
+                    "Ultimately, the best way to determine whether cognitive behavioral therapy is right for you is to speak with a mental health professional who is trained in this approach. \nThey can provide more information about the therapy and \nhelp you make an informed decision about whether to pursue it as a treatment option."]
+        },
+        {
+            "tag": ["risks_side_effects_cognitive_behavioral_therapy, Downsides_cognitive_behavioral_therapy"],
+            "patterns": ["What are the potential risks or side effects of cognitive behavioral therapy?","Can cognitive behavioral therapy have any negative effects?","Should I be concerned about any risks or side effects of cognitive behavioral therapy?","What are the possible drawbacks of cognitive behavioral therapy?","Is there a chance of experiencing any adverse effects from cognitive behavioral therapy?","Are there any downsides to undergoing cognitive behavioral therapy?","what are the potential cons of CBT?","what are the disadvantages of CBT?"],
+            "responses": ["CBT requires active participation and effort from the patient, \nwhich may not be suitable for everyone or may be more difficult for some.",
+                    "CBT may not be effective for everyone, \nparticularly for those with severe mental health conditions or complex issues.",
+                    "CBT sessions can be expensive, \nespecially if you are paying out of pocket or do not have insurance coverage.",
+                    "Yes, there can be potential downsides to undergoing cognitive behavioral therapy (CBT). \nWhile it is generally considered safe and effective, \nsome people may find the therapy uncomfortable or stressful, \nespecially when discussing difficult or traumatic experiences. \nAdditionally, CBT may not work for everyone and may require a significant time commitment. \nIn rare cases, some people may experience temporary increases in symptoms before experiencing long-term improvement. \nHowever, it's important to note that these potential downsides are generally outweighed by the benefits of CBT for many individuals. \nIt's always a good idea to discuss any concerns or questions with a qualified mental health professional.",
+                    "it may not be suitable for people with more complex mental health needs or learning difficulties.",
+                    "it involves confronting your emotions and anxieties, \nyou may experience initial periods where you're anxious or emotionally uncomfortable.",
+                    "it does not address any wider problems in systems or families that may have a significant impact on someone's health and wellbeing."]
+        },
+        {
+            "tag": "Types_of_mental_health_conditions_helped_by_cognitive_behavioral_therapy",
+            "patterns": ["What are some of the mental health issues that cognitive-behavioral therapy can help with?","Can cognitive-behavioral therapy be effective for treating specific mental health conditions?","What mental health conditions are typically treated with cognitive-behavioral therapy?","Is cognitive-behavioral therapy a suitable treatment for a variety of mental health issues?","Which mental health issues have been shown to respond well to cognitive-behavioral therapy?"],
+            "responses": ["Cognitive-behavioral therapy can be used to treat a variety of mental health conditions, including: \n1)anxiety disorders. \n2)depression. \n3)post-traumatic stress disorder. \n4)obsessive-compulsive disorder. \n5)eating disorders. \n6)substance use disorders, \nand some personality disorders."]
+        },
+        {
+            "tag": "techniques_cognitive_bahavioral_therapy",
+            "patterns": ["Can you tell me about the techniques used in cognitive-behavioral therapy?","What are some common techniques used in cognitive-behavioral therapy?","How does cognitive-behavioral therapy typically work, and what techniques are used?","Are there specific techniques that are commonly used in cognitive-behavioral therapy?","How is cognitive-behavioral therapy structured, and what techniques are employed during sessions?"],
+            "responses": ["\n1)Cognitive restructuring. \n2)Behavioral activation. \n3)Exposure therapy. \n4)Relaxation techniques. \n5)Problem-solving skills. \n6)Mindfulness-based therapy. \n7)Social skills training. \n8)Journaling."]
+        },
+        {
+            "tag": "cognitive-behavioral-therapy-cost",
+            "patterns": ["How much does cognitive-behavioral therapy usually cost?","Is cognitive-behavioral therapy expensive?","Can I get cognitive-behavioral therapy for free?","How many sessions of cognitive-behavioral therapy will I need to see results?"],
+            "responses": ["The cost of cognitive-behavioral therapy can vary depending on factors such as \nlocation, \ntherapist's qualifications, \nand type of insurance. \nGenerally, a session can cost between $100 and $250 per hour.",
+                    "The cost of cognitive-behavioral therapy may be higher compared to other forms of therapy, \nbut it is often covered by health insurance. \nSome therapists also offer sliding-scale fees or reduced rates for those with financial constraints.",
+                    "It is possible to access cognitive-behavioral therapy for free through \ncommunity mental health clinics, \nnon-profit organizations, \nor online therapy platforms. \nHowever, availability and quality may vary, and it's best to do your research beforehand.",
+                    "The number of sessions required for cognitive-behavioral therapy varies depending on the individual's condition and goals. \nGenerally, a course of treatment can range from 12 to 20 sessions, \nwith some individuals requiring fewer or more sessions depending on their progress."]
+        },
+        {
+            "tag": "cognitive_restructuring",
+            "patterns": ["What is cognitive restructuring?","How does cognitive restructuring work?","Can you explain cognitive restructuring?","What are the steps involved in cognitive restructuring?"],
+            "responses": ["This technique involves identifying negative or distorted thoughts and replacing them with more realistic and helpful ones.",
+                    "Cognitive restructuring is a technique used in cognitive-behavioral therapy to help individuals \nidentify negative or distorted thoughts \nand replace them with more realistic and helpful ones. \nIt involves challenging negative thoughts and beliefs, \nand replacing them with more accurate and positive ones.",
+                    "Cognitive restructuring involves identifying negative or distorted thoughts and beliefs, \nand then working to change them into more positive and accurate ones. \nThis technique is often used in cognitive-behavioral therapy to help individuals improve \ntheir mood and manage symptoms of anxiety and depression.",
+                    "Cognitive restructuring is a process of \nchanging negative or distorted thoughts and beliefs into more accurate and positive ones. \nThis technique is used in cognitive-behavioral therapy to help individuals improve \ntheir mood and manage symptoms of anxiety and depression.",
+                    "Cognitive restructuring involves identifying negative or distorted thoughts and beliefs, \nand then challenging and replacing them with more positive and accurate ones. \nThe goal is to help individuals improve their mood and manage symptoms of anxiety and depression.",
+                    "Once you identify the distortions you hold, \nyou can begin to explore how those distortions took root and why you came to believe them. \nWhen you discover a belief that is destructive or harmful, you can begin to challenge it. \nFor example, if you believe that you must have a high-paying job to be a respectable person, \nbut you are then laid off from your high-paying job, \nyou will begin to feel bad about yourself. \nInstead of accepting this faulty belief that leads you to think negative thoughts about yourself, \nwith cognitive restructuring you could take an opportunity to think about what really makes a person respectable, \na belief you may not have explicitly considered before."]
+        },
+        {
+            "tag": "behavioral_activation",
+            "patterns": ["What is behavioral activation?","Can you explain behavioral activation to me?","How does behavioral activation work?","Are there any downsides to using behavioral activation?","What are the potential risks or side effects of behavioral activation?","Can behavioral activation be harmful in any way?","What is behavioral activation in cognitive-behavioral therapy?","Can you explain how behavioral activation works?","How can behavioral activation help with depression?","What are some techniques used in behavioral activation therapy?","How does behavioral activation differ from other therapies?"],
+            "responses": ["This technique involves engaging in activities that are rewarding or enjoyable, \neven when feeling depressed or anxious.",
+                    "Behavioral activation is a technique used in cognitive-behavioral therapy that involves \nengaging in activities that are rewarding or enjoyable, even when feeling depressed or anxious. \nBy doing this, individuals can break the cycle of negative thoughts and feelings that often accompanies depression or anxiety.",
+                    "Behavioral activation is generally considered to be a safe and effective treatment for depression, \nand there are few if any risks or side effects associated with the technique. \nHowever, as with any form of therapy, it may not be effective for everyone, \nand it is important to discuss any concerns with your therapist.",
+                    "Behavioral activation is a technique used in cognitive-behavioral therapy that involves engaging in activities that are rewarding or enjoyable, even when feeling depressed or anxious. \nIt helps to increase positive experiences and improve mood.",
+                    "Behavioral activation works by helping individuals identify activities \nthat they enjoy or find rewarding and scheduling them into their daily routine. \nThis can lead to an increase in positive experiences and \na reduction in symptoms of depression or anxiety.",
+                    "Behavioral activation can help with depression by increasing the frequency of positive experiences and improving mood. It can also help individuals regain a sense of control and accomplishment in their lives.",
+                    "Some techniques used in behavioral activation therapy include identifying \nvalues and goals, monitoring and scheduling activities, \nand developing problem-solving skills.",
+                    "Behavioral activation differs from other therapies in that it focuses on increasing positive experiences and improving mood \nby scheduling enjoyable activities into the daily routine. \nIt can be used on its own or in conjunction with other therapies."]
+        },
+        {
+            "tag": "exposure_therapy",
+            "patterns": ["What is exposure therapy?","How does exposure therapy work?","Can you explain exposure therapy?","What are the benefits of exposure therapy?","Who can benefit from exposure therapy?"],
+            "responses": ["This technique involves gradually confronting feared situations or objects to reduce anxiety.",
+                    "Exposure therapy is a technique used in cognitive-behavioral therapy to gradually confront feared situations or objects to reduce anxiety.",
+                    "Exposure therapy works by exposing the person to the fear or anxiety-provoking situation or object in a controlled and safe environment.",
+                    "Exposure therapy can be used to treat a variety of conditions such as \nphobias, \nobsessive-compulsive disorder, \nand post-traumatic stress disorder.",
+                    "Exposure therapy has been shown to be an effective treatment for reducing anxiety and fear-related symptoms.",
+                    "Anyone who experiences anxiety or fear related to a specific situation or object may benefit from exposure therapy."]
+        },
+        {
+            "tag": "relaxation-techniques",
+            "patterns": ["what is relaxation technique?","What are some relaxation techniques that are commonly used in cognitive-behavioral therapy?","Can relaxation techniques help reduce stress and anxiety?","How do relaxation techniques work to reduce anxiety?","What are the benefits of using relaxation techniques in cognitive-behavioral therapy?","Are there any potential side effects of using relaxation techniques?"],
+            "responses": ["These techniques can include \ndeep breathing, \nprogressive muscle relaxation, \nor visualization exercises to reduce stress and anxiety.",
+                    "Some common relaxation techniques used in cognitive-behavioral therapy include \ndeep breathing, \nprogressive muscle relaxation, \nvisualization exercises, \nand guided imagery.",
+                    "Yes, relaxation techniques can help reduce stress and anxiety by promoting a state of relaxation and calmness in the body and mind.",
+                    "Relaxation techniques work by activating the body's relaxation response, \nwhich helps to counteract the physiological effects of anxiety, \nsuch as increased heart rate and muscle tension.",
+                    "Some benefits of using relaxation techniques in cognitive-behavioral therapy include \nreducing anxiety, \nimproving sleep, \nlowering blood pressure, \nand promoting a sense of calm and relaxation."]
+        },
+        {
+            "tag": "social_skills_training",
+            "patterns": ["What is social skills training in cognitive-behavioral therapy?","How can social skills training be helpful for mental health?","What are some examples of social skills that can be improved through training?","How long does social skills training typically last in cognitive-behavioral therapy?","Can social skills training be done individually or does it require group therapy?","What is social skills training?","How does social skills training work?","Can social skills training help me improve my communication with others?","What techniques are used in social skills training?","What types of mental health issues can social skills training help with?","Is social skills training a long-term or short-term therapy?","Who can benefit from social skills training?","How can I find a therapist who specializes in social skills training?","Are there any potential risks or side effects associated with social skills training?"],
+            "responses": ["This technique involves teaching individuals how to improve their communication and social interactions to reduce social anxiety and improve relationships.",
+                    "Social skills training in cognitive-behavioral therapy is a technique that helps individuals develop and improve their communication and social interaction abilities.",
+                    "Social skills training can be helpful for people with \nsocial anxiety, \ndifficulty making friends, \nor those who struggle with social interactions in general.",
+                    "Examples of social skills that can be improved through training include \nactive listening, \nassertiveness, \nempathy, \nand conflict resolution.",
+                    "The length of social skills training in cognitive-behavioral therapy can vary depending on the individual's needs and progress, \nbut typically it can last from a few sessions to several months.",
+                    "Social skills training can be done in both individual and group therapy settings, \ndepending on the individual's preference and therapeutic goals.",
+                    "Social skills training is a therapeutic approach that helps individuals improve their communication and social interactions with others.",
+                    "Social skills training typically involves teaching individuals specific techniques for communicating effectively, such as \nactive listening, \nssertiveness, \nand conflict resolution.",
+                    "Yes, social skills training can help individuals improve their communication with others and develop more satisfying relationships.",
+                    "Techniques used in social skills training may include role-playing exercises, modeling, feedback, and homework assignments.",
+                    "Social skills training can be helpful for individuals with a range of mental health issues, including \nsocial anxiety, \ndepression, \nand schizophrenia.",
+                    "Social skills training can be either a short-term or long-term therapy, depending on the individual's needs and goals.",
+                    "Social skills training can benefit anyone who wants to improve their communication and social interactions with others, regardless of their age or background.",
+                    "You can find a therapist who specializes in social skills training by searching online or contacting a mental health clinic or professional organization.",
+                    "There are generally no significant risks or side effects associated with social skills training, although some individuals may find the process challenging or uncomfortable at first."]
+        },
+        {
+            "tag": "problem_solving_therapy",
+            "patterns": ["What is problem-solving therapy?","How does problem-solving therapy work?","What are the benefits of problem-solving therapy?","Can problem-solving therapy help with depression?","What kind of problems can be addressed in problem-solving therapy?","How long does problem-solving therapy usually last?","Is problem-solving therapy effective?","What are the benefits of problem-solving therapy?","Can you tell me more about problem-solving therapy?","What techniques are used in problem-solving therapy?","How long does problem-solving therapy typically last?","Is problem-solving therapy effective for everyone?","Who is a good candidate for problem-solving therapy?"],
+            "responses": ["This technique involves teaching individuals how to identify and solve problems in their lives, \nwhich can reduce stress and improve mood.",
+                    "Problem-solving therapy is a form of cognitive-behavioral therapy that helps individuals develop practical and effective solutions to problems in their lives.",
+                    "Problem-solving therapy involves identifying a specific problem, breaking it down into manageable parts, \nand developing and implementing a plan to solve it.",
+                    "The benefits of problem-solving therapy include increased feelings of control and confidence, \nreduced stress and anxiety, \nand improved problem-solving skills.",
+                    "Problem-solving therapy can be used to address a wide range of problems, \nsuch as relationship issues, \nfinancial problems, \nwork-related stress, \nand health concerns.",
+                    "The length of problem-solving therapy can vary depending on the individual and the nature of their problems, \nbut it typically involves several sessions over a period of weeks or months.",
+                    "Yes, research has shown that problem-solving therapy can be an effective treatment for a variety of mental health conditions, including \ndepression, \nanxiety, \nand stress.",
+                    "Problem-solving therapy is a type of therapy that helps individuals develop skills to effectively cope with life's challenges and stressors.",
+                    "Problem-solving therapy can help individuals \ndevelop a more positive outlook on life, \nimprove their mood, \nand reduce their levels of stress.",
+                    "The benefits of problem-solving therapy can include \nimproved problem-solving skills, \nincreased self-esteem, \nand improved mood.",
+                    "Problem-solving therapy typically involves \nidentifying and breaking down a problem into smaller, \nmore manageable steps, \ndeveloping and implementing a plan of action, \nand evaluating the effectiveness of the plan.",
+                    "Problem-solving therapy typically lasts between 8 and 20 sessions, \ndepending on the individual's needs and the severity of their problems.",
+                    "While problem-solving therapy can be effective for many individuals, \nit may not be the best approach for everyone. \nYour therapist can help determine if it is the right fit for you.",
+                    "Those who may benefit from problem-solving therapy include individuals who struggle with \nstress, \nanxiety, \ndepression, \nand other mental health conditions, \nas well as individuals who are experiencing challenges in their personal or professional lives."]
+        },
+        {
+            "tag": "mindfulness-based therapy",
+            "patterns": ["What is mindfulness-based therapy?","How does mindfulness-based therapy work?","Can mindfulness-based therapy help with anxiety?","What are the benefits of mindfulness-based therapy?","How do I practice mindfulness-based therapy?","Is mindfulness-based therapy effective for depression?","What can I expect in a mindfulness-based therapy session?"],
+            "responses": ["This technique involves training individuals to be more present in the moment and observe their thoughts and feelings without judgment, \nwhich can reduce anxiety and improve mood.",
+                    "Mindfulness-based therapy is a type of therapy that combines \nmindfulness practices with cognitive and behavioral techniques to help individuals cope with \nstress, anxiety, and depression.",
+                    "Mindfulness-based therapy works by helping individuals become more aware of their thoughts and emotions in the present moment, without judgment. \nThis can help individuals identify and change negative thought patterns that contribute to stress and anxiety.",
+                    "Yes, mindfulness-based therapy has been found to be effective in reducing symptoms of anxiety and stress.",
+                    "The benefits of mindfulness-based therapy include \nreduced stress and anxiety, \nimproved mood, \nbetter sleep, \nand increased overall well-being.",
+                    "To practice mindfulness-based therapy, \nyou can start by incorporating mindfulness exercises into your daily routine, \nsuch as mindfulness meditation or mindful breathing. \nYou can also seek out a qualified therapist who specializes in mindfulness-based therapy.",
+                    "Yes, mindfulness-based therapy has been found to be effective in reducing symptoms of depression.",
+                    "In a mindfulness-based therapy session, \nyou can expect to learn mindfulness techniques and how to apply them to your daily life, \nas well as receive guidance and support from a qualified therapist."]
+        },
+        {
+            "tag": "anxiety",
+            "patterns": [
+                "What is anxiety?",
+                "Can you explain anxiety to me?",
+                "I'm not sure what anxiety is. Can you help?",
+                "What exactly does anxiety mean?",
+                "How would you define anxiety?"
+            ],
+            "responses": [
+                "Anxiety is a feeling of unease, such as worry or fear, that can be mild or severe. \nIt is a normal and often healthy emotion, but can become overwhelming and interfere with daily life when it is frequent or prolonged. \nSome common symptoms of anxiety include excessive worrying, restlessness, irritability, difficulty concentrating, and difficulty sleeping. \nIf you feel that your anxiety is interfering with your daily life, it may be helpful to talk to a mental health professional."
+            ]
+        },
+        {
+            "tag": "anxiety_effects",
+            "patterns": [
+                "How does anxiety affect me?",
+                "What are the effects of anxiety on me?",
+                "Can anxiety have an impact on me?"
+            ],
+            "responses": [
+                "Anxiety can affect you in many ways, both physically and mentally. \nPhysically, it can cause symptoms such as increased heart rate, sweating, trembling, and fatigue. Mentally, it can cause you to feel nervous, irritable, and on edge. \nIt can also interfere with your ability to concentrate, sleep, and perform daily tasks. \nIt is important to seek help if you are experiencing anxiety symptoms."
+            ]
+        },
+        {
+            "tag": "anxiety_symptoms_signs",
+            "patterns": [
+                "What are the common signs and symptoms of anxiety?",
+                "How do I know if I'm experiencing anxiety?",
+                "What are the physical and emotional symptoms of anxiety?"
+            ],
+            "responses": [
+                "Common signs and symptoms of anxiety include:\n- Feeling nervous, restless, or tense\n- Having a sense of impending danger, panic, or doom\n- Rapid heart rate, sweating, and trembling\n- Breathing rapidly or hyperventilating\n- Feeling weak or tired\n- Trouble concentrating or thinking about anything other than the present worry\n- Having trouble sleeping or staying asleep\n- Experiencing gastrointestinal (GI) problems, such as upset stomach, diarrhea, or irritable bowel syndrome (IBS)\n\nIt's important to note that everyone experiences anxiety differently and some symptoms may be more severe than others. If you are experiencing any of these symptoms and they are impacting your daily life, it's recommended to seek support from a healthcare professional."
+            ]
+        },
+        {
+            "tag": "anxiety_family_friends",
+            "patterns": [
+                "How can I talk to my family and friends about my anxiety?",
+                "What's the best way to discuss my anxiety with my loved ones?",
+                "I'm having trouble talking to my family and friends about my anxiety. Any advice?",
+                "How can I approach the topic of my anxiety with my family and friends?"
+            ],
+            "responses": [
+                "It's great that you're considering talking to your loved ones about your anxiety. \nIt can be a difficult conversation to have, but here are a few tips that may help:\n\n1. Choose the right time and place: Make sure you're in a comfortable, private setting where you won't be interrupted or rushed.\n\n2. Be honest and direct: Explain to your loved ones that you've been struggling with anxiety and that you want to talk to them about it.\n\n3. Share your experience: Describe your symptoms and how anxiety affects your daily life. Be specific about what triggers your anxiety and how it makes you feel.\n\n4. Ask for their support: Let your loved ones know how they can help you manage your anxiety. This might include giving you space when you need it, encouraging you to seek professional help, or simply being there to listen when you need to talk.\n\nRemember, it's okay to feel nervous or scared about having this conversation. \n\nYour loved ones care about you and want to support you, so don't be afraid to reach out.",
+                "Talking about anxiety can be difficult, but it's an important step towards managing it. \nHere are some tips for talking to your family and friends:\n\n1. Be prepared: Think about what you want to say and how you want to say it. Writing down your thoughts beforehand can be helpful.\n\n2. Use 'I' statements: Instead of blaming or accusing your loved ones, use 'I' statements to explain how you're feeling and what you need from them.\n\n3. Set boundaries: Let your loved ones know what you're comfortable sharing and what you're not. It's okay to take things at your own pace.\n\n4. Be patient: Your loved ones may not understand anxiety or know how to support you at first. It's important to be patient and give them time to learn.\n\nRemember, talking to your family and friends about your anxiety can help you feel less alone and more supported. Don't be afraid to ask for help when you need it.",
+                "Opening up about your anxiety can be a scary prospect, but it can also be incredibly beneficial. \nHere are some tips for talking to your family and friends:\n\n1. Be honest: Explain to your loved ones that you've been struggling with anxiety and that you want to talk to them about it. Being honest can help build trust and deepen your relationship.\n\n2. Educate them: Many people don't fully understand what anxiety is or how it affects people. Take the time to educate your loved ones about anxiety and how it affects you.\n\n3. Ask for support: Let your loved ones know what you need from them. This might include checking in with you regularly, giving you space when you need it, or just being there to listen.\n\n4. Be kind to yourself: Remember that opening up about your anxiety is a brave and difficult thing to do. Be kind to yourself and give yourself credit for taking this important step."
+            ]
+        },
+        {
+            "tag": "natural_remedies_anxiety",
+            "patterns": [
+                "What are some natural remedies for anxiety?",
+                "Are there any natural ways to treat anxiety?",
+                "How can I alleviate anxiety naturally?",
+                "Can you recommend some natural remedies for anxiety?"
+            ],
+            "responses": [
+                "There are several natural remedies that may help alleviate anxiety, such as: \n\n1)Regular exercise, such as yoga or jogging, can help reduce stress and anxiety levels.\n\n2)A healthy diet with a balance of fruits, vegetables, lean proteins, and whole grains can help support your body's natural defenses against anxiety.\n\n3)Certain herbs and supplements, such as chamomile, lavender, and valerian root, may help reduce anxiety symptoms.\n\n4)Practicing mindfulness and meditation can help calm your mind and reduce anxiety levels.\n\n5)Getting enough sleep and rest is important for overall mental and physical health, and can help reduce anxiety as well."
+            ]
+        },
+        {
+            "tag": "anxiety_social_situations",
+            "patterns": [
+                "How can I manage anxiety in social situations?",
+                "What are some tips for managing social anxiety?",
+                "I get anxious in social situations, how can I cope with it?"
+            ],
+            "responses": [
+                "One way to manage anxiety in social situations is to practice deep breathing or relaxation techniques beforehand.",
+                "It can be helpful to prepare conversation topics or questions in advance, so you feel more comfortable in social situations.",
+                "Try to focus on the present moment and the people around you, rather than worrying about how you are being perceived.",
+                "Remember that it is okay to take breaks and step away from social situations if you need to, to take care of your mental health.",
+                "Consider seeking professional help or joining a support group to work through your social anxiety."
+            ]
+        },
+        {
+            "tag": "panic_attacks",
+            "patterns": [
+                "What are panic attacks?",
+                "Can you explain what panic attacks are?",
+                "I'm not sure what a panic attack is. Can you help?",
+                "What exactly happens during a panic attack?"
+            ],
+            "responses": [
+                "Panic attacks are sudden episodes of intense fear or discomfort that reach a peak within minutes. \nThey often occur unexpectedly and can be very distressing.",
+                "A panic attack is a sudden surge of overwhelming fear and anxiety that can come without warning and for no obvious reason.",
+                "During a panic attack, you may experience physical symptoms such as sweating, shaking, shortness of breath, rapid heartbeat, and chest pain. \nYou may also feel intense fear, a sense of impending doom or danger, and a strong urge to flee the situation.",
+                "Panic attacks can be very frightening and disruptive, but it's important to remember that they are treatable with the right support and resources."
+            ]
+        },
+        {
+            "tag": "medication_anxiety",
+            "patterns": ["Can medication be helpful in treating anxiety?",
+                "How effective are medications in managing anxiety?",
+                "What are the possible side effects of anxiety medications?",
+                "Are there any medications that can help with both anxiety and depression?",
+                "Can medication alone treat anxiety, or is therapy also necessary?"],
+            "responses": ["Yes, medications can be helpful in treating anxiety. \nThey work by changing the levels of certain chemicals in the brain that are associated with anxiety.",
+                "Medications can be very effective in managing anxiety, especially when used in combination with therapy and lifestyle changes.",
+                "Possible side effects of anxiety medications can include drowsiness, dizziness, nausea, headaches, weight gain, and sexual dysfunction, among others. \nIt is important to talk to your doctor about any concerns you may have.",
+                "Yes, there are some medications that can help with both anxiety and depression. \nThese are called antidepressants and can be helpful for people who experience both anxiety and depression.",
+                "Medication alone may not be enough to treat anxiety in some people. \nIt is important to talk to your doctor about the best treatment options for you, which may include therapy, lifestyle changes, and/or medication."
+            ]
+        },
+        {
+            "tag": "reduce_anxiety",
+            "patterns": [
+                "How can CBT be used to reduce anxiety?",
+                "In what ways can CBT help reduce anxiety?",
+                "Can you explain how CBT can be used to manage anxiety?"
+            ],
+            "responses": [
+                "CBT can be used to reduce anxiety in several ways. \nOne way is by identifying and changing negative thought patterns that contribute to anxiety. \nThis involves challenging irrational thoughts and replacing them with more realistic and positive ones.",
+                "Another way that CBT can help manage anxiety is by teaching relaxation techniques such as: \ndeep breathing, progressive muscle relaxation, and visualization. \nThese techniques can help individuals feel more calm and in control during anxious moments.",
+                "CBT can also help individuals develop coping strategies for managing anxiety, such as: \nproblem-solving skills and exposure therapy. \nExposure therapy involves gradually exposing oneself to anxiety-provoking situations in a controlled and safe environment, which can help reduce the fear and anxiety associated with those situations over time."
+            ]
+        },
+        {
+            "tag": "anxiety_day_to_day",
+            "patterns": [
+                "How can I manage my anxiety on a day-to-day basis?",
+                "What are some daily strategies for coping with anxiety?",
+                "How can I reduce my anxiety levels throughout the day?",
+                "How can I manage my anxiety?",
+                "What are some day-to-day strategies to manage anxiety?",
+                "What can I do on a daily basis to cope with my anxiety?"
+            ],
+            "responses": [
+                "Practice relaxation techniques, such as deep breathing, meditation, or yoga.",
+                "Exercise regularly, as it can help reduce stress and anxiety.",
+                "Get enough sleep to ensure your body and mind are rested.",
+                "Keep a journal to express your feelings and monitor your progress.",
+                "Limit caffeine and alcohol consumption, as they can worsen anxiety symptoms.",
+                "Prioritize your time and set realistic goals to avoid feeling overwhelmed.",
+                "Seek support from family, friends, or a therapist.",
+                "Challenge negative thoughts and replace them with positive ones.",
+                "Practice self-care, such as taking a bath, reading a book, or listening to music.",
+                "Use grounding techniques, such as focusing on your senses or counting backwards from 100."
+            ]
+        },
+        {
+            "tag": "anxiety_management_work_school",
+            "patterns": [
+                "How can I manage my anxiety while at work or school?",
+                "What are some strategies for managing anxiety while at work or school?",
+                "I feel anxious when I'm at work/school. How can I manage it?"
+            ],
+            "responses": [
+                "One way to manage anxiety at work or school is to practice deep breathing exercises during breaks or whenever you feel overwhelmed.",
+                "Another strategy is to prioritize and break down tasks into smaller, more manageable steps. \nThis can help reduce feelings of being overwhelmed and anxious.",
+                "Taking short walks or doing light exercise during breaks can also help reduce anxiety while at work or school.",
+                "It may also be helpful to talk to a supervisor or teacher about your anxiety to see if any accommodations can be made, \nsuch as adjusting deadlines or providing additional support.",
+                "Finally, it's important to practice self-care outside of work or school by getting enough rest, eating healthy, \nand engaging in activities that bring you joy and relaxation."
+            ]
+        },
+        {
+            "tag": "what_is_depression",
+            "patterns": ["Can you explain what depression is?",
+                "What are the characteristics of depression?",
+                "How would you define depression?",
+                "What is meant by the term depression?",
+                "Can you describe depression and its symptoms?",
+                "What is the meaning of depression in a mental health context?"],
+            "responses": ["Depression is classified as a mood disorder. \nIt may be described as feelings of sadness, loss, or anger that interfere with a person's everyday activities.",
+                "Depression is a common and serious mental health disorder characterized by persistent feelings of \nsadness, hopelessness, and loss of interest in activities that were once enjoyed."]
+        },
+        {
+            "tag": "effect_depression",
+            "patterns": ["What are the effects of depression on a person?",
+                "In what ways can depression impact an individual?",
+                "What are the symptoms of depression and how do they affect a person?",
+                "How does depression impact one's daily life?",
+                "What changes in behavior or mood can be caused by depression?",
+                "Can depression have physical effects on a person?",
+                "What are some common ways that depression affects people's thoughts and emotions?",
+                "How does depression impact relationships and social interactions?",
+                "In what ways can depression affect one's work or school performance?"],
+            "responses": ["Persistent feelings of sadness or hopelessness",
+                "Loss of interest in activities that were once enjoyable",
+                "Changes in appetite or weight",
+                "Sleep disturbances (either sleeping too much or too little)",
+                "Fatigue or loss of energy",
+                "Difficulty concentrating or making decisions",
+                "Feelings of worthlessness or guilt",
+                "Thoughts of death or suicide",
+                "Physical symptoms, such as headaches or digestive problems",
+                "Withdrawal from social activities or relationships."]
+        },
+        {
+            "tag": "depression_causes",
+            "patterns": ["What factors contribute to the development of depression?",
+                "What are some of the underlying causes of depression?",
+                "Why do some people experience depression while others do not?",
+                "What role do genetics play in the development of depression?",
+                "How do environmental factors influence the development of depression?",
+                "Are there certain life experiences or events that can trigger depression?",
+                "What is the relationship between depression and brain chemistry?",
+                "Can physical health problems contribute to the development of depression?",
+                "Are there any lifestyle factors that can contribute to the development of depression?",
+                "How do cultural and societal factors impact the development of depression?"],
+            "responses": ["Loss of Benefits - Have you recently suffered big losses in your life, such as the loss of a job, friends, or intimacy? \nThe behavioral model of depression places a strong emphasis on the role that reward plays in the development and upkeep of depression. \nNumerous studies have shown that people who experience major life stresses are more likely to develop depression, \nespecially if they do not have or do not use effective coping mechanisms.",
+                "Rewarding Behavior Declines - Are you partaking in less of the gratifying activities you once did? \nActivity withdrawal and idleness are traits of depression. \nFor instance, sad persons claim to spend a lot of time engaging in inactive and unfulfilling activities like watching television, lounging in bed, thinking about their troubles, and griping to pals. \nLess time is spent engaging in difficult and gratifying activities including healthy social relationships, exercise, leisure, education, and useful job.",
+                "Lack of expertise - Do you lack any social skills or problem-solving abilities? \nPeople who are depressed may struggle to stand up for themselves, keep their friendships intact, or resolve conflicts with their partners, friends, or coworkers. \nThey experience more interpersonal conflict and have less possibilities to influence positive outcomes for themselves since they either don't have these talents or don't employ the ones they do have.",
+                "New Demands - Do you feel unprepared for any new demands? Many people experience tremendous stress as a result of moving to a new city, beginning a new work, becoming a parent, leaving a relationship, and attempting to make new acquaintances.",
+                "Major life changes, such as the loss of a loved one, divorce, financial problems, or a chronic illness",
+                "Trauma or abuse, including physical, sexual, or emotional abuse",
+                "Chronic stress, including work-related stress or relationship problems",
+                "Medical conditions, such as chronic pain or hormonal imbalances",
+                "Substance abuse or addiction."]
+        },
+        {
+            "tag": "signs_symptoms_depression",
+            "patterns": ["What are the signs and symptoms of depression, and how can I identify them in myself or someone else?","How do I know if I or someone else is experiencing depression?","What are the warning signs of depression, and how can I spot them?","What are some common indicators of depression, and how can I recognize them in myself and those around me?","How can I tell if what I'm feeling or what someone else is experiencing is depression?","Are there certain behaviors or emotions that may indicate someone is struggling with depression? How can I recognize them?"],
+            "responses": ["If you have a low mood that lasts 2 weeks or more, it could be a sign of depression.",
+                "In yourself: \n1) Persistent feelings of sadness, hopelessness, or emptiness. \n2) Loss of interest or pleasure in activities you once enjoyed. \n3) Changes in appetite or weight. \n4) Changes in sleep patterns. \n5) Fatigue or lack of energy. \n6) Difficulty concentrating or making decisions. \n7) Feelings of worthlessness or guilt. \n8) Thoughts of self-harm or suicide.",
+                "In others: \n1) Persistent feelings of sadness, hopelessness, or emptiness. \n2) Loss of interest or pleasure in activities they once enjoyed. \n3) Changes in appetite or weight. \n4) Changes in sleep patterns. \n5) Fatigue or lack of energy. \n6) Difficulty concentrating or making decisions. \n7) Feelings of worthlessness or guilt. \n8) Withdrawing from social activities or friends and family. \n9) Irritability or excessive moodiness. \n10) Thoughts of self-harm or suicide."]
+        },
+        {
+            "tag": "dealing_with_stigma_depression",
+            "patterns": ["How can I overcome the shame associated with seeking help for mental health issues?",
+                "What are some strategies for reducing the stigma of depression and mental illness?",
+                "How can I educate others about depression and mental health?",
+                "What can I do if I face discrimination or prejudice due to my depression?",
+                "How can I find support and encouragement to seek help for my mental health?",
+                "What are some common misconceptions about depression and how can I address them?"],
+            "responses": ["Stigma surrounding mental health issues can prevent people from seeking help and support when they need it. \nHere are some ways to deal with the stigma surrounding depression and seeking help: \n1) Educate yourself: \nLearn about depression and mental health issues so you can understand the facts and myths surrounding these conditions. \n2) Seek support from trusted people: \nTalk to friends, family members, or a mental health professional who can provide support and understanding. \n3) Don't let stigma stop you from seeking help: \nRemember that seeking help is a sign of strength, not weakness. \n4) Share your story: \nSpeak openly about your experiences with mental health issues to help reduce stigma and encourage others to seek help. \n5) Challenge stereotypes and negative attitudes: \nSpeak up when you hear someone making negative comments about mental health issues or people who are struggling. \n6) Use positive self-talk: \nPractice positive self-talk and remind yourself that your mental health is important and seeking help is a brave and healthy choice. \n7) Seek out resources and support groups: \nThere are many resources available for people dealing with mental health issues, including support groups and online resources. \nRemember that you are not alone and there is no shame in seeking help for mental health issues."]
+        },
+        {
+            "tag": "depression_support",
+            "patterns": ["How can I support a loved one with depression?","What can I do to help a friend or family member with depression?","How can I be there for someone who is struggling with depression?"],
+            "responses": ["Family and friends can support someone with depression by: \n1) Educating themselves about depression and how it affects people. \n2) Listening and being there for the person without judging or trying to 'fix' them. \n3) Encouraging the person to seek professional help and offering to help them find resources. \n4) Being patient and understanding, as recovery from depression takes time. \n5) Offering practical help, such as running errands or helping with household tasks. \n6) Encouraging healthy habits, such as exercise and good sleep hygiene. \n7) Avoiding blaming the person or making them feel guilty for their depression. \n8) Checking in regularly with the person and being a consistent source of support.",
+                "You can support someone with depression by simply being there for them, \nlistening without judgment, and offering your empathy and understanding. \nEncourage them to seek professional help and offer to help them find a therapist or doctor. \nYou can also help them with everyday tasks, such as cooking or cleaning, and encourage them to engage in activities they enjoy. \nRemember to take care of yourself too, as supporting someone with depression can be emotionally challenging."]
+        },
+        {
+            "tag": "exercise_beneficial_depression",
+            "patterns": ["How can exercise help with depression?","What are the benefits of exercise for people with depression?","Does physical activity have an impact on depression?","Can exercise be used as a treatment for depression?"],
+            "responses": ["Exercise has been shown to have a positive impact on depression. \nRegular physical activity can help to reduce symptoms of depression, such as: \nlow mood, \nfeelings of hopelessness, \nand fatigue. \nExercise has also been found to increase the production of endorphins, \nwhich are natural chemicals in the body that can improve mood and reduce pain.",
+                "Additionally, exercise can improve self-esteem, social interaction, \nand overall quality of life for people with depression. \nIt is important to note that exercise should not be used as a substitute for professional treatment, \nbut can be used in conjunction with therapy \nand medication to help manage symptoms of depression."]
+        },
+        {
+            "tag": ["depression", "sadness"],
+            "patterns": ["What distinguishes depression from sadness?","How is depression different from feeling sad?","What is the contrast between depression and sadness?"],
+            "responses": ["While sadness is a normal human emotion that everyone experiences, \ndepression is a mental illness that affects a person's thoughts, feelings, and behavior. \nSadness is often a temporary response to a situation or event, \nwhile depression persists and can interfere with daily life. \nDepression is characterized by a persistent feeling of sadness or emptiness, \nloss of interest in activities, fatigue, difficulty sleeping or sleeping too much, \nchanges in appetite, difficulty concentrating, feelings of worthlessness or guilt, \nand in severe cases, thoughts of suicide. \nIf you are experiencing any of these symptoms, \nit's important to seek help from a healthcare professional."]
+        },
+        {
+            "tag": "diet_depression",
+            "patterns": ["Can what I eat affect my depression?","Is there a link between diet and depression?","What role does food play in managing depression?"],
+            "responses": ["Yes, research suggests that diet can have an impact on depression. \nEating a healthy and balanced diet with plenty of whole foods and nutrients like \nomega-3 fatty acids, vitamin D, and B vitamins may help manage symptoms of depression.",
+                "While diet is not a cure for depression, \nit can play a role in managing symptoms. \nSome studies have shown that a diet high in processed and unhealthy foods may increase the risk of depression, \nwhile a diet rich in whole foods and nutrients may help improve mood.",
+                "Absolutely. The foods you eat can have a direct impact on your brain chemistry and can affect your mood. \nEating a diet that is rich in nutrients, \nsuch as whole grains, fruits and vegetables, lean proteins, and healthy fats, can help reduce \ninflammation, regulate blood sugar levels, and \nsupport the production of neurotransmitters that are essential for good mental health."]
+        },
+        {
+            "tag": "reduce_depression",
+            "patterns": ["What are some ways to manage or alleviate depression?",
+                "How can I improve my mental health and reduce symptoms of depression?",
+                "What are some strategies for coping with depression?",
+                "What can I do to feel better and improve my mood?",
+                "Are there any lifestyle changes I can make to reduce depression?",
+                "How can I take care of myself and manage my depression?",
+                "What are some self-help techniques for reducing depression?",
+                "What are some natural ways to combat depression?",
+                "How can I find relief from symptoms of depression?",
+                "What can I do to reduce depression?",
+                "How can I manage my depression?",
+                "What are some strategies for coping with depression?",
+                "How can I improve my mood and reduce symptoms of depression?"],
+            "responses": ["1) Identify negative thought patterns: \nCBT helps you to identify and challenge negative thoughts that contribute to your depression. \nBy recognizing and changing these thoughts, you can change your emotional response and reduce symptoms of depression. \n2) Set realistic goals: \nCBT can help you to set realistic goals and break them down into manageable steps. \nThis can help you feel a sense of accomplishment and improve your mood. \n3) Focus on the present: \nDepression can be characterized by dwelling on past mistakes or worries about the future. \nCBT encourages you to focus on the present moment and develop coping strategies for the here and now. \n4) Practice relaxation techniques: \nCBT can teach you relaxation techniques such as deep breathing, meditation, or progressive muscle relaxation. \nThese techniques can help you manage feelings of anxiety or stress that may be contributing to your depression. \n5) Monitor your progress: \nCBT involves regularly monitoring your progress and adjusting your strategies as needed. \nKeeping track of your symptoms, moods, and progress can help you stay motivated and focused on your goals.\nOverall, CBT can be a helpful tool for managing and reducing symptoms of depression. \nIt is important to work with a qualified therapist who can tailor the treatment to your specific needs and goals."]
+        },
+        {
+            "tag": "identifying_negative_thought_patterns_depression", 
+            "patterns": ["How can I identify negative thought patterns that contribute to my depression?",
+                "What are some techniques for recognizing and challenging negative thoughts to alleviate depression?",
+                "How can I become more aware of my automatic negative thoughts and replace them with more positive ones?",
+                "What are some common cognitive distortions that can lead to depression, and how can I address them?",
+                "In what ways can negative thinking patterns influence my mood and contribute to depression?",
+                "How can I shift my perspective and reframe negative thoughts to improve my mental health?",
+                "What role do thought patterns play in the development and maintenance of depression, and how can I break the cycle?",
+                "Can cognitive-behavioral therapy help me identify and address negative thought patterns that contribute to my depression?",
+                "How can mindfulness practices help me recognize and manage negative thoughts that can exacerbate depression?",
+                "What are some self-help techniques for identifying and challenging negative thoughts that can improve my mood and reduce depression?"],
+            "responses": ["To identify negative thought patterns and reduce depression, \nyou can try the following techniques:\n1) Keep a thought diary: \nWrite down your negative thoughts in a journal or notebook. \nThen, identify the thoughts that are irrational or distorted.\n2) Challenge your thoughts: \nOnce you've identified your negative thoughts, challenge them. \nAsk yourself if there is any evidence to support these thoughts or if they are based on assumptions.\n3) Replace negative thoughts with positive ones: \nWhen you have negative thoughts, try to replace them with positive ones.\nFor example, if you find yourself thinking 'I am a failure' replace it with 'I've had setbacks, but I've also had successes.'\n4) Practice mindfulness:\n Mindfulness is a technique that can help you become more aware of your thoughts and emotions. \nBy focusing on the present moment and acknowledging your thoughts without judgment, \nyou can become more aware of negative thought patterns and learn to let them go.\n5) Seek professional help: \nA mental health professional can help you identify negative thought patterns and provide you with the tools and support you need to overcome depression."]
+        },
+        {
+            "tag": "set_realistic_goals_depression",
+            "patterns": ["How can setting realistic goals help in reducing depression?",
+                "What is the role of setting achievable goals in managing depression?",
+                "Can goal-setting be an effective strategy for reducing depression?",
+                "How can I use goal-setting to overcome my depression?",
+                "What are the benefits of setting realistic goals in managing depression?"],
+            "responses": ["If you are feeling depressed, setting realistic goals can be a helpful strategy to reduce your symptoms. \nHere are some steps you can take: \n1) Start by identifying small, achievable goals that you can work on. \nThese could be as simple as taking a shower, going for a short walk, or doing one load of laundry. \n2) Write down your goals and make a plan for how you will achieve them. \nBreak larger goals down into smaller steps and set deadlines for each step. \n3) Celebrate your successes along the way, no matter how small they may be. \nThis will help keep you motivated and build your confidence. \n4) Be kind to yourself if you experience setbacks or difficulties along the way. \nRemember that setbacks are a natural part of the process, and that progress takes time. \n5)Keep a record of your progress and use it to motivate yourself to keep going. \nThis could be a journal, a planner, or an app that tracks your goals and progress."]
+        },
+        {
+            "tag": "present_moment_awareness_depression",
+            "patterns": ["What are some ways to live in the moment and focus on the present?","How can I avoid dwelling on the past and focus on the present?","What are some techniques to help me stay present and mindful?","How can I train my mind to stay focused on the present moment?"],
+            "responses": ["1) Start by practicing mindfulness: \nMindfulness is a technique that involves paying attention to the present moment, without judgment. \nIt can help you become more aware of your thoughts and feelings, \nand develop a greater sense of control over them. \nYou can practice mindfulness through activities like \nmeditation, yoga, or simply taking a few deep breaths and focusing on your breath.",
+                "2) Determine your triggers: \nSpecific circumstances or occurrences can make depression worse. \nFinding your triggers will help you create coping mechanisms to deal with them and stop them from triggering depression. \nYou can learn coping mechanisms for social anxiety, \nsuch as practicing relaxation techniques or creating small, manageable goals for socializing, \nif you find that social circumstances are a trigger for you.", 
+                "3) Confront negative thoughts: \nNegative thought patterns are frequent in depression and can promote feelings of powerlessness and hopelessness. \nWith the help of CBT, you can learn to recognize and combat these negative beliefs and exchange them for more realistic and upbeat ones. \nYou can dispute a thought like, 'I will never be able to get through this,' for instance, by asking, \n'What evidence do I have that I won't be able to get through this?' and \n'What other strategies might I employ in this circumstance?'.",
+                "4) Self-care is important: \nTaking care of oneself is crucial for lowering depression. \nThis include getting enough rest, maintaining a good diet, working out frequently, and doing things you like."]
+        },
+        {
+            "tag": "practice_relaxation_techniques_depression",
+            "patterns": ["What are some relaxation techniques to help with depression?",
+                "Can relaxation techniques be used to manage symptoms of depression?",
+                "How can I incorporate relaxation techniques into my routine to help with depression?",
+                "What are some effective ways to practice relaxation to reduce symptoms of depression?",
+                "How do relaxation techniques help in managing depression?"],
+            "responses": ["If you are going through depression, \npracticing relaxation techniques can help reduce symptoms. \nStart by finding a quiet, comfortable place where you can relax without interruption. \nYou can try different techniques such as deep breathing, progressive muscle relaxation, guided imagery, and mindfulness meditation. \n1) To practice deep breathing, take slow, deep breaths in through your nose, and out through your mouth. \nFocus on your breath, and try to release any tension you may be holding in your body. \n2) To achieve progressive muscle relaxation, \nalternately tension and relax each body part, \nbeginning with your feet and working your way up to your head. \nAny physical strain you may be experiencing might be relieved by doing this. \n3) In guided imagery, you imagine a peaceful or relaxing place in your mind, such as a beach or a forest. \nThis may aid in promoting relaxation and reducing tension. \n4)Focusing on the present moment without passing judgment is a component of mindfulness meditation. \nYou can begin by just concentrating on your breathing and returning your attention to it whenever your thoughts stray. \nRegularly using relaxation techniques can help decrease stress and anxiety, enhance sleep, and minimize depressive symptoms."]
+        },
+        {
+            "tag": "monitor_progress_depression",
+            "patterns": ["How can you track your progress in reducing depression?","What are some ways to monitor your improvement when dealing with depression?","How can you measure your progress in managing depression?"],
+            "responses": ["Set specific goals and track their progress towards achieving them.",
+                "Keep a journal or mood diary to track their emotions and any patterns they notice.",
+                "Regularly check in with a therapist or mental health professional to discuss their progress \nand adjust their treatment plan as needed.",
+                "Use apps or tools designed for tracking mood and progress, \nsuch as mood tracking apps or worksheets."]
+        },
+        {
+            "tag": "other_methods_ways_reduce_depression",
+            "patterns": ["What are some alternative treatments for depression besides CBT?",
+                "Are there other methods to reduce depression aside from CBT?",
+                "Can you suggest other approaches to manage depression besides CBT?",
+                "What are some non-CBT techniques to alleviate depression?",
+                "How can you treat depression without CBT?"],
+            "responses": ["Medication: \nAntidepressant medications can help regulate brain chemicals that affect mood and reduce symptoms of depression. \nA person can use this method by consulting with a healthcare provider to \ndetermine if medication is a suitable treatment option for their specific needs and symptoms.", 
+                "Psychotherapy: \nThis involves talking with a trained mental health professional to identify and address the root causes of \ndepression, develop coping strategies, and improve overall emotional well-being. \nA person can use this method by finding a therapist who specializes in treating \ndepression and working with them to develop a personalized treatment plan.",
+                "Exercise: \nRegular physical activity can boost mood, reduce stress, and improve overall health. A person can use this method by engaging in moderate exercise for at least 30 minutes a day, five days a week. Activities like walking, running, cycling, swimming, and yoga are all good options.",
+                "Nutrition: \nA balanced diet that includes \nplenty of fruits, vegetables, whole grains, and lean proteins \ncan provide essential nutrients that support brain function and promote mental health. \nA person can use this method by consulting with a registered dietitian to develop a healthy eating plan that meets their specific needs.", 
+                "Sleep: \nGetting adequate, restful sleep is essential for good mental health. \nA person can use this method by practicing good sleep hygiene, \nsuch as establishing a regular sleep schedule, avoiding screens before bedtime, \nand creating a comfortable sleep environment.", 
+                "Support network: \nHaving a strong support system of family, friends, and \nother loved ones can provide emotional support and encouragement during difficult times. \nA person can use this method by reaching out to \nsupportive individuals, joining a support group, or participating in online forums.",
+                "Mindfulness and meditation: \nThese techniques involve focusing on the present moment, cultivating a non-judgmental attitude, and developing greater awareness of one's thoughts and feelings. A person can use this method by practicing mindfulness and meditation techniques regularly, such as deep breathing exercises, guided meditations, or yoga.", 
+                "Alternative therapies: \nSome people find relief from depression through alternative therapies such as \nacupuncture, massage, or herbal supplements. \nA person can use this method by researching and trying different alternative therapies to determine if they provide any benefit."]
+        },
+        {
+            "tag": "work-personal_life_balance_depression",
+            "patterns": ["What are some strategies for managing depression while keeping up with work and personal responsibilities?",
+                "How can I balance my depression and responsibilities at work and in my personal life?",
+                "What are some tips for managing depression while juggling work and personal obligations?",
+                "Is it possible to manage depression while still fulfilling work and personal responsibilities? If so, how?",
+                "How can I avoid letting my depression interfere with my job and personal life?"],
+            "responses": ["It can be challenging to balance the demands of work and personal responsibilities with the effects of depression. \nHere are some tips to help you manage:\n1)Prioritize self-care: Make time for activities that help you manage your depression, \nsuch as exercise, therapy, or spending time with loved ones. \nPrioritize self-care as much as you prioritize work and other responsibilities. \n2)Communicate with your employer: \nIf you are struggling with depression, \nit may be helpful to communicate with your employer about your situation. \nThey may be able to offer accommodations or resources to support your mental health. \n3)Break tasks into smaller steps: \nWhen you feel overwhelmed by a task, break it into smaller, more manageable steps. \nThis can make the task feel less daunting and more achievable. \n4)Set realistic expectations: \nBe realistic about what you can accomplish in a given day or week. \nSetting unrealistic expectations can contribute to feelings of failure and exacerbate depression. \n5)Ask for help: \nDon't hesitate to ask for help from colleagues, friends, or family members. \nThey may be able to assist with tasks or provide emotional support when you need it. \nRemember, managing depression is a journey and there will be good days and bad days. \nBe kind to yourself and take things one step at a time."]
+        },
+        {
+            "tag": "what_is_mental_health",
+            "patterns": ["What is mental health?","What do you mean by mental health?","Define mental health","Can you explain what mental health is?","I'm not sure what mental health means"],
+            "responses": ["Mental health refers to a person's overall psychological well-being. \nIt includes how a person thinks, feels, and behaves.",
+                    "Mental health refers to the state of a person's emotional, psychological, and social well-being. \nIt affects how we think, feel, and act in our daily lives.",
+                    "Mental health is the state of our emotional, psychological, and social well-being. \nIt affects how we think, feel, and behave, and how we interact with others.",
+                    "Mental health is a person's overall well-being in terms of their emotional, psychological, and social functioning. \nIt can affect how a person thinks, feels, and behaves in their daily life.",
+                    "Mental health is the state of our emotional, psychological, and social well-being. \nIt's important to maintain good mental health to have a good quality of life."]
+        },
+        {
+            "tag": "why_mental_health_important",
+            "patterns": ["Why is mental health important?","Is mental health really that important?","What's the big deal with mental health?","I don't see why mental health is such a big deal","Can you explain why mental health matters?"],
+            "responses": ["Mental health is important because it affects every aspect of our lives. \nIt affects our thoughts, emotions, and behaviors, \nand it can impact our relationships, work, and overall quality of life.",
+                    "Mental health is just as important as physical health. \nIt affects how we think, feel, and act, and it's crucial for our overall well-being.",
+                    "Mental health is important because it's an integral part of who we are. \nIt affects our ability to cope with stress, manage our emotions, \nand navigate life's challenges.",
+                    "Mental health is important because it can impact every area of our lives, from our relationships to our work performance to our physical health.",
+                    "Mental health is important because it's essential for living a fulfilling and meaningful life. \nWhen we take care of our mental health, we're better equipped to handle life's ups and downs and make the most of our experiences."]
+        },
+        {
+            "tag": "mental_health_problem",
+            "patterns": ["How do I know if I have a mental health problem?", "What are the signs of a mental health problem?", "How can I tell if I have a mental illness?"],
+            "responses": ["There are several signs that you may have a mental health problem. \nThese include persistent feelings of sadness or hopelessness, \nchanges in appetite or sleep patterns, \ndifficulty concentrating or making decisions, \nand thoughts of self-harm or suicide. \nIf you are concerned about your mental health, it's important to talk to a healthcare provider who can help you assess your symptoms and provide treatment options.",
+                    "There are many different mental health conditions, and each can have unique symptoms. \nSome common signs that you may have a mental health problem include changes in mood, behavior, or thinking patterns. \nIf you are unsure whether you have a mental health problem, \nit's important to seek an evaluation from a healthcare provider who can help you understand your symptoms and recommend appropriate treatment." ] 
+        },
+        {
+            "tag": ["common_mental_disorders, mental_health_issues"],
+            "patterns": ["What are the most common mental health disorders?","Can you tell me the most common mental health disorders?","Which mental health disorders are most common?","I'm curious about the most common mental health disorders.","What are some of the mental health disorders that are most prevalent?"],
+            "responses":[ "Some of the most common mental health disorders include \nanxiety disorders, \nmood disorders such as depression and bipolar disorder, \nand substance use disorders.",
+                    "According to the World Health Organization, some of the most common mental health disorders include \ndepression, \nanxiety disorders, \nbipolar disorder, \nand schizophrenia.",
+                    "The most common mental health disorders include \ndepression, \nanxiety disorders, \nand substance use disorders. \nOther common disorders include \neating disorders, \npersonality disorders, \nand schizophrenia.",
+                    "Depression, anxiety disorders, and substance use disorders are some of the most common mental health disorders. \nOther common disorders include bipolar disorder, eating disorders, and post-traumatic stress disorder (PTSD).",
+                    "Some of the most common mental health disorders are \ndepression, \nanxiety disorders, \nand substance use disorders. \nOther common disorders include bipolar disorder, eating disorders, and obsessive-compulsive disorder (OCD)."]
+        },
+        {
+            "tag": "mental_health_treatments",
+            "patterns": ["What are the best treatments for mental health?","What treatments are available for mental health issues?","How can I get help for my mental health?","What are some effective treatments for mental health problems?","I am struggling with my mental health, what can I do?","Are there any proven treatments for mental health problems?"],
+            "responses": ["There are several effective treatments for mental health problems, such as \ncognitive behavioral therapy (CBT), \nmedication, \nand talk therapy. \nIt's important to consult with a mental health professional to determine which treatment is best for you.",
+                    "Treatment for mental health problems varies depending on the specific condition and severity of the symptoms. \nSome common treatments include therapy, medication, and lifestyle changes such as exercise and diet.",
+                    "If you are struggling with your mental health, it's important to seek help from a mental health professional. \nThey can work with you to determine the best treatment plan for your specific needs.",
+                    "The most effective treatments for mental health problems often involve a combination of therapy and medication. \nIt's important to work with a mental health professional to determine the best course of action for your specific condition.",
+                    "There is no one-size-fits-all treatment for mental health problems, as each person's needs are different. \nHowever, some common treatments include therapy, medication, and self-care practices such as exercise and mindfulness.",
+                    "Effective treatments for mental health problems can vary depending on the specific condition and individual needs. \nIt's important to consult with a mental health professional to determine the best course of action for you."]
+        },
+        {
+            "tag": "normal_anxiety_depression",
+            "patterns": ["Is it normal to feel anxious sometimes?", "Is it common to feel depressed at times?","I've been feeling anxious a lot lately, is that normal?", "I feel really down sometimes, is that common?","Why do I sometimes feel anxious or depressed?", "Is there a reason I feel down sometimes?","I feel like I shouldn't be feeling anxious or depressed, is that true?", "Is it bad to feel down sometimes?","Does feeling anxious or depressed sometimes mean I have a mental illness?", "If I feel anxious or depressed, does that mean something is wrong with me?"],
+            "responses": ["Yes, it is normal to feel anxious or depressed sometimes. \nEveryone experiences these feelings to some extent. \nHowever, if these feelings persist or interfere with your daily life, it may be time to seek professional help.",
+                    "It's common to experience anxiety or depression at certain points in life. \nIf you're concerned about how you're feeling, it may be helpful to talk to someone about it. \nSeeking support from friends, family, or a mental health professional can be a helpful first step.",
+                    "There are many reasons why someone may experience anxiety or depression, including life stressors, changes in brain chemistry, or genetics. \nIt's important to recognize that feeling this way doesn't make you weak or flawed. \nSeeking support and taking care of yourself can help improve your mental health.",
+                    "It's important to remember that everyone experiences a range of emotions, including anxiety and depression.\nIt doesn't mean you're weak or flawed, and it doesn't make you a burden on others. \nIt's okay to ask for help and to take care of yourself when you're feeling down.",
+                    "Feeling anxious or depressed sometimes is a normal part of the human experience. \nIt doesn't necessarily mean you have a mental illness. \nHowever, if these feelings persist or interfere with your daily life, \nit may be a good idea to seek professional help."]
+        },
+        {
+            "tag": "mental_health_talk",
+            "patterns": ["I'm feeling really overwhelmed and I want to talk to someone about my mental health","How can I start a conversation about my mental health with someone?","I'm struggling with my mental health and I need to talk to someone about it","I don't know how to tell someone about my mental health concerns","I want to open up about my mental health but I don't know how to start the conversation","How do I start a conversation about my mental health with someone?","I want to talk to someone about my mental health, but I don't know how to bring it up.","What's the best way to talk to a friend or family member about my mental health concerns?","I feel ashamed to talk about my mental health with someone. What can I do?","How can I find a mental health professional to talk to?"],
+            "responses": ["It takes courage to talk about your mental health, and it's important to remember that you're not alone. \nYou can start the conversation by saying something like, \n'I've been struggling with my mental health lately and I could use someone to talk to.",
+                    "Talking to someone about your mental health can be scary, \nbut it's a brave and important step towards taking care of yourself. \nYou might find it helpful to write down what you want to say beforehand or practice the conversation with a trusted friend.",
+                    "When you're ready to talk about your mental health, it can be helpful to choose a time and place where you feel comfortable and safe. \nYou can start the conversation by saying something like, \n'I've been feeling really down lately and I could use some support.",
+                    "It's understandable to feel nervous about talking to someone about your mental health, \nbut it's important to remember that many people have been through similar experiences. \nYou can start the conversation by saying something like, \n'I've been struggling with my mental health and I could use someone to listen.",
+                    "Remember that there's no one 'right' way to talk about your mental health, and everyone's journey is different. \nYou can start the conversation by saying something like, \n'I've been feeling really anxious/depressed/stressed lately and \nI think I could benefit from talking to someone about it.",
+                    "Starting a conversation about your mental health can be difficult, \nbut it's important to remember that it's okay to talk about it. \nYou could try saying something like, I've been feeling down lately and I think I might need some help. \nWould you be willing to listen?",
+                    "It's normal to feel unsure about how to start the conversation, \nbut you could try saying something like, \nHey, I've been struggling with my mental health lately and I wanted to talk to someone about it. Would you be willing to listen?",
+                    "It's important to find a time when you and the person you want to talk to can have a private conversation without interruptions. \nYou could start by saying something like, \nI've been feeling really anxious lately and I wanted to talk to someone about it.Do you have a few minutes to listen?",
+                    "Remember that mental health struggles are common and it's okay to talk about them. \nYou could try reaching out to a mental health professional or a support group if you're not comfortable talking to someone you know.",
+                    "There are many mental health professionals out there who are trained to help people with a variety of concerns. \nYou could start by looking for a therapist or counselor in your area, or reaching out to a mental health hotline for advice on finding help."]
+        },
+        {
+            "tag": "mental_health_prevention",
+            "patterns": ["Is it possible to prevent mental health problems?","Can mental health issues be avoided?","What can I do to prevent mental health problems?","Are there ways to reduce the risk of mental health problems?","Is there anything I can do to protect my mental health?","What can I do to reduce my risk of developing mental health problems?","Are there any preventative measures I can take to avoid mental health problems?","How can I keep my mental health in good shape?","Is there anything I should be doing now to prevent mental health problems in the future?","What lifestyle changes can I make to protect my mental health?"],
+            "responses": ["Yes, there are ways to prevent mental health problems. Maintaining a healthy lifestyle, managing stress, and seeking help when needed are all important steps.",
+                    "While it's not always possible to prevent mental health problems, there are things you can do to reduce the risk. \nThis includes staying active, eating a healthy diet, and getting enough sleep.",
+                    "There are a variety of things you can do to prevent mental health problems. \nThis includes staying connected with others, engaging in activities you enjoy, and managing stress in healthy ways.",
+                    "Preventing mental health problems can involve taking care of yourself both physically and mentally. \nThis includes getting regular exercise, eating a balanced diet, and practicing self-care.",
+                    "Preventing mental health problems can involve making lifestyle changes such as \nreducing stress, getting enough sleep, and avoiding drugs and alcohol.",
+                    "Maintaining a healthy lifestyle, including \nregular exercise, a balanced diet, and adequate sleep, can reduce your risk of developing mental health problems.",
+                    "Developing good coping mechanisms, such as \nstress-management techniques, \nand seeking support from friends, family, \nor mental health professionals can also help prevent mental health problems.",
+                    "Regular self-care practices such as\n mindfulness, \nmeditation, \nor relaxation exercises can also promote good mental health.",
+                    "Identifying and addressing potential risk factors, such as substance abuse, trauma, or chronic stress, can also prevent mental health problems from developing or worsening.",
+                    "Being aware of your own mental health and seeking professional help when needed can also prevent mental health problems from becoming more severe or chronic."]
+        },
+        {
+            "tag": "supporting-loved-one",
+            "patterns": ["How can I support my friend who is struggling with depression?","My family member has anxiety, how can I best support them?","What can I do to help my partner who has PTSD?","How do I approach my loved one about seeking professional help for their mental health issues?","What are some things I can do to create a safe and supportive environment for my loved one?","How can I show my support without being intrusive?","What resources are available for me to better understand and support my loved one's mental health?","What are some effective communication strategies when talking with a loved one about their mental health struggles?","How can I encourage my loved one to prioritize their self-care and mental health needs?"],
+            "responses": ["Just being there for your friend and offering a listening ear can be very helpful. \nEncourage them to seek professional help and offer to help them find a therapist.",
+                    "Offer support in practical ways, such as running errands or helping with household chores. \nAsk them how they are doing and let them know that you are there to support them.",
+                    "Learn more about PTSD and its symptoms so you can better understand what your partner is going through. \nEncourage them to seek therapy and offer to attend sessions with them if they would like.",
+                    "Approach the conversation with empathy and understanding. \nLet your loved one know that you care about their well-being and that seeking help is a sign of strength, not weakness.",
+                    "Create a safe and supportive space by listening without judgement, validating their feelings, and offering support in a non-intrusive way. \nMake sure they know that you are there to support them.",
+                    "Respect their boundaries and avoid giving unsolicited advice. \nLet them know that you are there to support them in any way they need, \nbut also give them space if they need it.",
+                    "There are many resources available, including \nbooks, \nsupport groups, \nand online forums. \nConsider attending a support group yourself to better understand what your loved one is going through.",
+                    "Listen actively and validate their feelings. \nUse 'I' statements to avoid putting them on the defensive, \nand avoid offering solutions unless they ask for them.",
+                    "Encourage your loved one to prioritize their self-care by taking time for themselves and engaging in activities they enjoy. \nOffer to do these things with them.",
+                    "Avoid dismissing their feelings, offering unsolicited advice, or pressuring them to do things they're not comfortable with. \nLet them know that you're there to support them and that you care about their well-being."]
+        }, 
+        {
+            "tag": "physical_health_and_mental_health",
+            "patterns": ["How does physical health affect mental health?", "Is there a connection between physical and mental health?", "Can physical activity improve mental health?","What are some physical health problems that can lead to mental health problems?", "How does chronic pain impact mental health?", "Can medication for physical health problems affect mental health?","How does exercise benefit mental health?", "Does a healthy diet improve mental health?", "Can lack of sleep affect mental health?","Can mental health problems cause physical health problems?", "How does stress impact physical health?", "What is the mind-body connection?","Can therapy for mental health issues improve physical health?", "What role does self-care play in maintaining physical and mental health?", "How can mindfulness and meditation help both physical and mental health?"],
+            "responses": ["There is a strong connection between physical health and mental health. \nTaking care of your body can help improve your mood and mental wellbeing.", 
+                    "Poor physical health can lead to or exacerbate mental health problems.", 
+                    "Physical activity has been shown to improve mental health by reducing symptoms of depression and anxiety.",
+                    "Chronic physical pain can lead to depression and anxiety, \nand can also impact a person's ability to carry out daily activities.",
+                    "Some medications for physical health problems can have side effects that impact mental health.",
+                    "Conditions like diabetes and heart disease have been linked to an increased risk of depression and other mental health problems.",
+                    "Exercise releases endorphins, which can improve mood and reduce symptoms of anxiety and depression.",
+                    "Eating a healthy diet can help regulate mood and improve overall wellbeing.",
+                    "Lack of sleep can lead to or worsen mental health problems like depression and anxiety.",
+                    "Mental health problems can cause physical symptoms like headaches, fatigue, and muscle pain.",
+                    "Stress can lead to physical health problems like high blood pressure and heart disease.",
+                    "The mind-body connection refers to the way in which mental health and physical health are interconnected.",
+                    "Therapy can help improve physical health by reducing stress and anxiety, and improving sleep.",
+                    "Self-care is important for maintaining both physical and mental health. \nThis can include things like getting regular exercise, eating a healthy diet, and practicing relaxation techniques.",
+                    "Mindfulness and meditation have been shown to reduce symptoms of anxiety and depression, \nas well as improve physical health markers like blood pressure."]
+        },        
+        {
+            "tag": "myth",
+            "patterns": ["What are some common myths about mental health disorders?","I've heard a lot of things about mental health, but what's the truth and what's not?","Can you help me understand some of the misconceptions about mental health disorders?","What are some things people believe about mental health that are not correct?","I've been hearing a lot of conflicting information about mental health. Can you clear up some of the confusion?","Are there any myths about mental health that you'd like to address?","What are some misunderstandings people have about mental health?","I want to learn more about mental health, but I'm not sure what to believe. Can you help me?","What are some harmful myths about mental health that we need to dispel?","Can you give me some examples of myths about mental health and the truth behind them?","Mental health disorders are a sign of weakness.","People with mental health disorders are dangerous and violent.","Mental health disorders are rare.","Therapy and medication do not work for mental health disorders.","Mental health disorders are caused by bad parenting.","Only women experience mental health disorders.","People with mental health disorders cannot lead productive lives.","Mental health disorders are not real illnesses.","Mental health disorders are a result of personal weakness or lack of willpower.","Mental health disorders only affect certain races or cultures."],
+            "responses": ["Myth: Mental health disorders are rare. \nTruth: Mental health disorders are actually very common and affect millions of people worldwide.",
+                    "Myth: Mental health disorders are a sign of weakness. \nTruth: Mental health disorders have nothing to do with weakness. They are medical conditions that can happen to anyone, regardless of strength or character.",
+                    "Myth: Mental health disorders are not real. \nTruth: Mental health disorders are very real and can have a significant impact on a person's life. \nThey are recognized by medical professionals and treated like any other medical condition.",
+                    "Myth: People with mental health disorders are violent or dangerous. \nTruth: People with mental health disorders are no more likely to be violent or dangerous than anyone else. \nIn fact, they are more likely to be victims of violence than perpetrators.",
+                    "Myth: Mental health disorders are caused by personal weakness or bad choices. \nTruth: Mental health disorders have a variety of causes, including genetics, environmental factors, and life experiences. \nThey are not caused by personal weakness or bad choices.",
+                    "Myth: You can just snap out of a mental health disorder. \nTruth: Mental health disorders are not something you can just snap out of. \nThey require treatment and support, just like any other medical condition.",
+                    "Myth: Seeking treatment for a mental health disorder is a sign of weakness. \nTruth: Seeking treatment for a mental health disorder is a sign of strength and courage. \nIt takes bravery to acknowledge a problem and seek help.",
+                    "Myth: Mental health disorders are untreatable. \nTruth: Mental health disorders are treatable with a variety of options, \nincluding therapy, medication, and lifestyle changes. \nMany people with mental health disorders are able to lead fulfilling lives with the right treatment.",
+                    "Myth: Mental health disorders only affect certain types of people. \nTruth: Mental health disorders can affect anyone, regardless of age, gender, race, or socioeconomic status.",
+                    "Myth: Mental health disorders are a personal failing. \nTruth: Mental health disorders are not a personal failing. \nThey are medical conditions that require treatment and support.",
+                    "Actually, mental health disorders are caused by a complex interplay of factors, \nincluding genetics, environment, and life experiences.",
+                    "Mental health disorders are common and affect people of all backgrounds and ages.",
+                    "People with mental health disorders can and do recover, especially with proper treatment and support.",
+                    "Mental health disorders are real illnesses that can be treated and managed.",
+                    "People with mental health disorders can lead productive and fulfilling lives.",
+                    "There is no evidence to support the idea that mental health disorders are caused by bad parenting.",
+                    "Men experience mental health disorders just as frequently as women do.",
+                    "Therapy and medication are proven to be effective treatments for many mental health disorders.",
+                    "People with mental health disorders are no more likely to be violent than people without mental health disorders.",
+                    "Mental health disorders can affect anyone, regardless of their race or culture."]
+        },
+        {
+            "tag": "what_is_stress",
+            "patterns": ["Can you explain the concept of stress?","What exactly is stress?","How would you define stress?","What does the term 'stress' mean?","What is the definition of stress?","Could you give me a brief explanation of stress?","What is stress and how does it affect us?","In layman's terms, what is stress?","What are the basics of stress?"],
+            "responses": ["Stress is a natural physical and mental reaction to life's demands, challenges, and changes. \nIt's the body's way of responding to a perceived threat or demand, often referred to as the fight or flight response. \nStress can be caused by both positive and negative events or circumstances, \nand can have physical and emotional effects on an individual's well-being. \nWhile some stress is normal and even helpful in certain situations, \nchronic or prolonged stress can have negative impacts on one's mental and physical health."]
+        },
+        {
+            "tag": "stress_causes, stress_triggers",
+            "patterns": ["What are the causes of stress?","What triggers stress in humans?","Why do people feel stressed?","What are the underlying reasons for stress?","How does stress develop in individuals?","What factors contribute to stress?"],
+            "responses": ["We experience stress as a natural response to perceived threats or demands in our environment. \nWhen we encounter situations or events that we perceive as: \nchallenging, \nthreatening, \nor demanding, \nour body's natural fight \nor flight response is activated, \nwhich triggers the release of stress hormones such as cortisol and adrenaline. \nThis response helps prepare us to take action in response to the perceived threat or demand, \nbut it can also lead to feelings of tension, anxiety, \nand other physical and emotional symptoms associated with stress.","The problem occurs when we experience too much stress. \nWe overtax the natural resources of our body both physically and mentally. \nChronic, high levels of stress have been associated with many serious physical and psychological difficulties, including: \ninsomnia, \ncardiovascular disease, \nhypertension, \nobesity, \ndepression, \nand anxiety disorders.","Many events and circumstances are naturally stressful. \nLosing a loved one or having a medical illness, for example, contribute a certain amount of stress to our lives. \nEven positive events, like a job promotion or wedding, can cause stress. \nHowever, the amount or degree of stress that we experience varies from person to person, \ntypically due to subjective factors.","Our thoughts about our experiences play a significant role in determining whether or not something is stressful and the resultant amount of stress that we experience. \nRunning late for an appointment, \nfor example, we can ruminate about how it is unfair and unacceptable, which increases our stress. \nAlternatively, we can accept that it is happening and consider other thoughts, \nsuch as the possibility of rescheduling the appointment or even what we are going to have for dinner.  \nAt such times however, we need to be particularly aware of possible stress-producing thoughts and make deliberate efforts to ensure that our thinking is balanced and reasonable.","The way that we interact with the world around us also plays a significant role in our experience of stress. \nOur behavior helps shape our experience of stress and how others might respond to us. \nFor example, if we wake-up five minutes before we are supposed to be at work, \nthen we are going to experience more stress than if we wake-up an hour or two in advance.  \nAlso, the ways in which we care for ourselves (or don’t) influence our level of stress.  Countless studies have detailed the benefits of physical exercise, which also helps us better manage stress.  Diet also is important:  a balanced repertoire of whole foods is much healthier than a steady diet of alcohol, processed foods, and sweets."]
+        },
+        {
+            "tag": "types_of_stress",
+            "patterns": ["What are the different categories of stress?","Can you describe the various kinds of stress?","How many types of stress are there?","In what ways can stress be classified?","Are there different classifications of stress? If so, what are they?","What are the main types of stress that people experience?"],
+            "responses": ["There are several different types of stress: \n1.Acute stress: This type of stress is short-term and is typically caused by a specific event or situation. \n2.Chronic stress: This type of stress is ongoing and long-term, and can be caused by a variety of factors such as work, financial problems, or relationship issues. \n3.Physical stress: This type of stress is caused by physical factors such as illness, injury, or lack of sleep. \n4.Emotional stress: This type of stress is caused by emotional factors such as grief, anxiety, or depression. \n5.Environmental stress: This type of stress is caused by environmental factors such as noise, pollution, or overcrowding. \n6.Social stress: This type of stress is caused by social factors such as discrimination, bullying, or conflict with others."]
+        },
+        {
+            "tag": "signs_symptoms_stress",
+            "patterns": [],
+            "responses": ["Due to the complex nature of stress and its effect on us, there are many potential warning signs.  Every person has a different response to overwhelming stress based on his/her genetic predispositions, life history, and current thoughts, feelings, and behaviors.", 
+                "Physical Symptoms: \n1)Muscle tension. \n2)Headaches. \n3)Weight changes. \n4)Stomach aches. \n5)chest pain or a faster heartbeat. \n6)Sweating or trembling hands. \n7)Sexual dysfunction. \n8)Restlessness.",
+                "Behavioral Symptoms: \n1)Increased consumption of alcohol or drugs. \n2)being irritable and snappy. \n3)sleeping too much or too little. \n4)eating too much or too little. \n5)Isolation. \n6)Procrastination. \n7)Conflicts with others. \n8)Restricted breathing.",
+                "Psychological Symptoms: \n1)Decreased emotional control. \n2)Often worried. \n3)Forgetfulness. \n4)Feeling overwhelmed. \n5)constantly worrying. \n6)Difficulty making decisions. \n7)Intense bouts of anger. \n8)difficulty concentrating."
+            ]
+        },
+        {
+            "tag": "reduce_stress",
+            "patterns": ["How can i reduce stress?", "What are some effective methods for reducing stress?","How can I manage my stress levels effectively?","What are some practical tips for coping with stress?","What techniques can I use to lower my stress levels?","What are some natural ways to reduce stress?"],
+            "responses": ["1) Identifying negative thought patterns: \nCBT helps individuals identify and challenge negative or irrational thoughts that contribute to stress. \nBy recognizing and changing these patterns, individuals can develop a more positive and realistic outlook, which can reduce stress.\n2) Learning coping strategies: \nCBT teaches individuals coping strategies that can help manage stress, such as relaxation techniques, time management skills, and problem-solving skills.\n3) Developing better communication skills: \nCBT can improve communication skills, which can reduce stress in relationships and social situations.\n4) Building resilience: \nCBT can help individuals develop resilience, which is the ability to cope with and adapt to stressors. \nBy building resilience, individuals can become more resilient to stress and better equipped to handle challenging situations.\n5) Addressing underlying mental health issues: \nCBT can help individuals address underlying mental health issues that contribute to stress, such as anxiety or depression. \nBy treating these issues, individuals can reduce stress and improve their overall well-being."]
+        },
+        {
+            "tag": "identifying_negative_thought_patterns_stress",
+            "patterns": ["What are some ways to recognize negative thought patterns?","Can you provide some tips on identifying negative thought patterns?","How can I become more aware of my negative thought patterns?","What are some signs that I might have negative thought patterns that are contributing to my stress?","Are there any exercises or activities I can do to help identify negative thought patterns?"],
+            "responses": ["First, it's important for you to become aware of your negative thought patterns. \nThis means paying attention to your thoughts, feelings, and behaviors and recognizing when you're experiencing stress. \nNext, you can challenge and change those negative thoughts through cognitive restructuring. \nThis may involve questioning the accuracy of negative thoughts, \nreframing them in a more positive way, or replacing them with more realistic thoughts. \nIn addition to changing negative thoughts, making behavioral changes can also help reduce stress. \nFor example, if work-related stress is a trigger, you can set more realistic goals, improve time management, or learn to delegate tasks. \nCoping strategies can also be effective in managing stress. \nCBT can teach you relaxation techniques like deep breathing or meditation, or stress-reducing activities like exercise or socializing. \nFinally, it's important to maintain these positive changes over time by continuing to practice the techniques and strategies learned in therapy and being aware of potential stress triggers. \nWith practice and consistency, you can develop a more positive and resilient mindset that can help reduce stress in the long term." ]
+        }, 
+        {
+            "tag": "learning_coping_strategies_stress",
+            "patterns": ["What are some techniques for coping with stress?","How can I learn to manage stress?","What are some effective coping mechanisms for stress?","Can you suggest some stress-reducing strategies?","How can I develop better coping skills for stress?","What are some healthy ways to cope with stress?","Can you teach me some techniques for dealing with stress?"],
+            "responses": ["A person dealing with stress can use coping strategies learned in CBT to manage and reduce their stress levels. \nFor example, they can use relaxation techniques like deep breathing or \nprogressive muscle relaxation to help calm their mind and body. \nThey can also practice effective time management skills, \nsuch as creating a schedule or breaking down tasks into smaller, more manageable steps. \nProblem-solving skills learned in therapy can also be applied to stressful situations, \nallowing the person to identify and implement effective solutions. \nBy incorporating these coping strategies into their daily routine, \nindividuals can develop a more positive and resilient mindset, \nwhich can help reduce stress in the long term."]
+        },
+        {
+            "tag": "developing_better_communication_skills",
+            "patterns": ["What are some ways to improve communication skills?",
+                "How can I become a better communicator?",
+                "What are the benefits of developing better communication skills?",
+                "Can communication skills be learned and improved?",
+                "What are some effective communication techniques?",
+                "How can I communicate more effectively with others?",
+                "What role do communication skills play in reducing stress and improving relationships?"],
+            "responses": ["Developing better communication skills can help reduce stress by improving: \ninterpersonal relationships and reducing misunderstandings. \nHere are some ways you can use this technique to reduce stress: \n1) Practice active listening: \nWhen you listen actively, you focus on what the other person is saying without interrupting or judging them. \nThis can help reduce misunderstandings and improve communication. \n2) Use 'I' statements: \nWhen expressing your needs and feelings, using 'I' statements can be more effective than blaming or accusing the other person. \nFor example, saying 'I feel upset when you criticize me' instead of 'You always criticize me' can help the other person better understand your perspective. \n3) Clarify your message: \nIf you're unsure whether the other person has understood your message, \nask them to repeat it back to you or summarize what they've heard. \n4) Be assertive: \nBeing assertive means expressing your needs and opinions in a clear and direct way, \nwhile respecting the other person's rights and feelings. \nThis can help reduce stress caused by conflicts or unmet needs. \n5) Practice empathy: \nPutting yourself in the other person's shoes can help you better understand their perspective and communicate more effectively. \nThis can also help reduce stress caused by misunderstandings or conflicts. \nBy developing better communication skills, you can improve your relationships, reduce misunderstandings, and manage stress more effectively."]
+        }, 
+        {
+            "tag": "building_resilience_stress", 
+            "patterns": ["How can I build resilience?",
+                "What are some ways to develop resilience?",
+                "Can you suggest strategies for improving resilience?",
+                "How do I become more resilient?",
+                "What is resilience and how can it be built?",
+                "What are the steps to building resilience?",
+                "How can I strengthen my resilience to stress?",
+                "What techniques can help me become more resilient?",
+                "What are some effective ways to build resilience in the face of stress and adversity?"],
+            "responses": ["Building resilience can help individuals better cope with stress by \ndeveloping the ability to adapt to challenges and recover from setbacks. \nHere are some ways a person dealing with stress can use building resilience to reduce stress: \n1) Practice self-care: \nTaking care of yourself physically, emotionally, and mentally is essential to building resilience. \nThis can include getting enough sleep, eating a healthy diet, exercising regularly, \nand engaging in activities that bring you joy. \n2) Develop a support system: \nHaving a strong support system of family, friends, \nor a therapist can help you better cope with stress. \nReach out to trusted individuals when you need support or guidance. \n3) Reframe negative thoughts: \nResilient individuals are able to reframe negative thoughts and find positive meaning in difficult situations. \nFocus on your strengths and successes, and practice gratitude for the good things in your life. \n4) Learn to manage emotions: \nResilient individuals are able to manage their emotions effectively, which can help reduce stress. \nPractice mindfulness, deep breathing, or other relaxation techniques to help regulate your emotions. \n5) Set realistic goals: \nSetting realistic goals and working toward them can help build a sense of accomplishment and resilience. \nBreak larger goals into smaller, achievable steps to help you stay motivated and on track. \nBy building resilience, individuals can develop the skills and mindset necessary to better cope with stress and thrive in the face of challenges."]
+        },
+        {
+            "tag": "addressing_underlying_mental_health_issues_stress",
+            "patterns": ["What role do underlying mental health issues play in stress?",
+                "How can addressing underlying mental health issues help reduce stress?",
+                "Can untreated mental health issues contribute to stress?",
+                "What are some examples of underlying mental health issues that can cause stress?",
+                "In what ways can addressing mental health issues improve overall well-being and reduce stress?"],
+            "responses": ["If you're experiencing stress due to underlying mental health issues, \naddressing those issues can be an important step in reducing your stress. \nYou can start by seeking out professional help, such as a therapist or counselor, \nwho can work with you to identify and address any underlying mental health issues. \nThey can help you develop coping strategies and other techniques to manage your symptoms and reduce your stress. \nIt's also important to practice self-care, \nsuch as getting enough sleep, \neating a healthy diet, \nand engaging in physical activity,\nas these can all help improve your mental health and reduce stress levels. \nRemember, it's okay to ask for help and to prioritize your mental health."]
+        },
+        {
+            "tag": "stress-management-workplace-school",
+            "patterns": [
+                "How can I manage stress at work or school?",
+                "What are some ways to reduce stress in the workplace or at school?",
+                "I'm feeling overwhelmed at work/school, what can I do to manage my stress?",
+                "How can I balance the demands of work/school and still reduce my stress?",
+                "I'm having a hard time coping with the stress of work/school, what can I do?",
+                "What are some strategies to manage stress in a high-pressure work or school environment?"
+            ],
+            "responses": [
+                "Here are some ways to manage stress at work or school:\n\n1. Prioritize tasks and set realistic goals for yourself.\n2. Take breaks throughout the day to recharge and clear your mind.\n3. Practice good time management and avoid procrastination.\n4. Seek support from colleagues or classmates.\n5. Engage in stress-reducing activities outside of work/school such as exercise, hobbies, or spending time with loved ones.\n6. Consider talking to a mental health professional for additional support.",
+                "Managing stress at work or school can be challenging, but there are things you can do to help. Some tips include:\n\n1. Practice self-care by getting enough sleep, eating well, and exercising regularly.\n2. Learn to say no when you have too much on your plate.\n3. Take breaks throughout the day to rest and recharge.\n4. Build strong relationships with colleagues or classmates for support.\n5. Practice mindfulness or meditation to help reduce stress and increase focus.\n6. Seek professional help if stress becomes unmanageable.",
+                "Here are some stress management techniques that you can use in the workplace or at school:\n\n1. Set realistic goals and prioritize tasks.\n2. Take breaks and engage in stress-reducing activities like stretching or deep breathing.\n3. Improve time management skills by creating a schedule and sticking to it.\n4. Communicate openly and effectively with colleagues or classmates.\n5. Practice self-care by getting enough sleep and exercise.\n6. Seek professional help if stress becomes unmanageable.",
+                "Managing stress at work or school can be overwhelming, but you can try some of these strategies to help:\n\n1. Practice self-care by eating well, sleeping enough, and exercising regularly.\n2. Use time management techniques to prioritize tasks and avoid procrastination.\n3. Take breaks throughout the day to rest and recharge.\n4. Build a support system by connecting with colleagues or classmates.\n5. Consider mindfulness or meditation practices to help reduce stress.\n6. Seek professional help if needed to manage your stress."
+            ]
+        },
+        {
+            "tag": "work-personal_life_balance_stress",
+            "patterns": ["How can I balance my personal and professional life to reduce stress?",
+                "What are some ways to balance work and personal life to reduce stress?",
+                "Can you suggest some strategies for balancing personal and professional life to reduce stress?",
+                "What are some tips for managing stress while balancing work and personal life?",
+                "How can I reduce stress while managing both my personal and professional life?"
+            ],
+            "responses": ["One way to balance your personal and professional life is to establish clear boundaries between the two. This means setting aside specific times for work and specific times for personal activities, and avoiding doing work during your personal time.",
+                "Another strategy is to prioritize your tasks and focus on the most important ones first. \nThis can help you avoid feeling overwhelmed and stressed out by a long to-do list.",
+                "You can also try delegating tasks to others, whether it's at work or at home. \nThis can help reduce your workload and free up some time for yourself.",
+                "It's important to take breaks throughout the day and give yourself time to relax and recharge. \nThis can help you feel more energized and focused when you return to work or other tasks.",
+                "Make sure to schedule some time for yourself to engage in activities you enjoy, \nwhether it's a hobby or spending time with friends and family. \nThis can help you feel more balanced and less stressed overall."
+            ]
+        },
+        {
+            "tag": "stressed",
+            "patterns": ["I am stressed", "I am feeling stressed lately", "I am experiencing a lot of stress recently","Stress is overwhelming me","I'm so stressed out","Dealing with a lot of stress","Stress is getting to me","I can't handle the stress anymore"],
+            "responses": ["I'm sorry to hear that you're feeling stressed. Stress can be overwhelming, but there are ways to manage it. Take a deep breath and try to identify the main sources of stress in your life.",
+                "Stress is a common experience, and it's important to take steps to reduce it. Remember to prioritize self-care and find healthy ways to cope with stress.",
+                "It's understandable to feel stressed, but remember that you're not alone. Reach out to friends, family, or professionals who can provide support and guidance.",
+                "Stress can have a negative impact on both your physical and mental well-being. It's crucial to find healthy ways to cope with stress and prioritize self-care.",
+                "When stress becomes overwhelming, it's important to take a step back and evaluate what's causing it. Consider implementing stress management techniques such as exercise, relaxation exercises, and seeking support from others.",
+                "Stress is a normal part of life, but it's important to find healthy ways to manage it. Don't hesitate to seek help and support if you're feeling overwhelmed.",
+                "It's okay to feel stressed, but remember to prioritize your well-being. Take breaks, practice self-care, and seek support when needed."
+            ]
+        },
+        {
+            "tag": "depression",
+            "patterns": [
+                "I'm feeling depressed",
+                "I think I might be depressed",
+                "I can't shake off this feeling of sadness",
+                "Everything feels meaningless",
+                "I'm losing interest in things I used to enjoy",
+                "I have no energy or motivation",
+                "I'm sleeping too much or not enough"
+            ],
+            "responses": [
+                "I'm sorry to hear that you're feeling this way. It's important to remember that you're not alone, and there is support available for you. Consider reaching out to a mental health professional who can help you navigate through these feelings.",
+                "Depression can be a challenging experience, but there is hope for recovery. It's important to seek help from a healthcare professional who can provide appropriate guidance and support.",
+                "It takes courage to talk about your feelings of depression. Consider confiding in a trusted friend or family member, and together, you can explore options for professional help.",
+                "Depression can make you feel isolated, but remember that there are people who care about you. Reach out to someone you trust and let them know what you're going through.",
+                "It's important to prioritize your mental health. Consider speaking with a mental health professional who can help you understand and address your feelings of depression.",
+                "Depression is a serious condition, and it's important to seek professional help. A mental health professional can work with you to develop a personalized treatment plan.",
+                "You don't have to face depression alone. There are support groups, helplines, and therapists available to assist you in your journey towards healing and recovery."
+            ]
+          },
+          {
+            "tag": "anxiety",
+            "patterns": [
+                "I'm feeling anxious",
+                "I can't stop worrying",
+                "My heart races and I feel panicked",
+                "I'm having trouble breathing",
+                "I feel on edge all the time",
+                "I'm afraid something bad will happen",
+                "I'm having frequent panic attacks"
+            ],
+            "responses": [
+                "Anxiety can be overwhelming, but remember that there are techniques and strategies to manage it. Consider deep breathing exercises or mindfulness practices to help calm your mind.",
+                "It's important to seek support when dealing with anxiety. Consider reaching out to a mental health professional who can provide guidance and help you develop coping mechanisms.",
+                "Anxiety can impact your daily life, but there is help available. Consider speaking with a therapist who specializes in anxiety disorders for personalized strategies to manage your symptoms.",
+                "You're not alone in your experience with anxiety. Many people struggle with similar feelings. Consider connecting with support groups or online communities where you can share your experiences and learn from others.",
+                "It's important to prioritize self-care when dealing with anxiety. Make sure you're getting enough rest, eating well, and engaging in activities that bring you joy and relaxation.",
+                "Anxiety can be challenging, but remember that it doesn't define you. Focus on building resilience and developing healthy coping mechanisms to navigate through anxious moments.",
+                "When anxiety becomes overwhelming, it's important to seek professional help. A mental health professional can provide effective treatments and support tailored to your specific needs."
+            ]
+          },
+          {
+            "tag": "happy",
+            "patterns": [
+                "I'm feeling happy",
+                "I'm so excited!",
+                "I'm in a great mood",
+                "Life is going well",
+                "I'm feeling joyful",
+                "I'm grateful for everything",
+                "I can't stop smiling"
+            ],
+            "responses": [
+                "That's wonderful! Enjoy the happiness and embrace the positive moments in life.",
+                "It's great to hear that you're feeling happy. Surround yourself with positivity and continue to do things that bring you joy.",
+                "Happiness is contagious! Share your positive energy with others and spread the joy.",
+                "Feeling happy is a beautiful thing. Take the time to appreciate and savor this moment.",
+                "Being in a good mood can have a positive impact on your overall well-being. Keep doing what makes you happy!",
+                "Remember to celebrate the happy moments in life, no matter how small they may seem. Cherish and hold on to those feelings.",
+                "Happiness is a state of mind. Cultivate gratitude and focus on the positive aspects of your life."
+            ]
+          }
+          
+          
+          
+
+    ]
+}
+  
